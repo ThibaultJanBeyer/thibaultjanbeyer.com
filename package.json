@@ -1,0 +1,46 @@
+{
+  "name": "thibaultjanbeyer.com",
+  "version": "10.0.0",
+  "description": "Thibault Jan Beyer's Portfolio",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "*"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-babel": "*",
+    "gulp-changed": "*",
+    "gulp-clean": "*",
+    "gulp-concat": "*",
+    "gulp-csso": "*",
+    "gulp-htmlhint": "*",
+    "gulp-htmlmin": "*",
+    "gulp-imagemin": "*",
+    "gulp-jshint": "*",
+    "gulp-load-plugins": "*",
+    "gulp-plumber": "*",
+    "gulp-sass": "*",
+    "gulp-scss-lint": "*",
+    "gulp-size": "*",
+    "gulp-svg-sprite": "*",
+    "gulp-uglify": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThibaultJanBeyer/thibaultjanbeyer.com-v10.git"
+  },
+  "keywords": [
+    "Modern",
+    "Accessible",
+    "Responsive",
+    "Design",
+    "Art"
+  ],
+  "author": "Thibault Jan Beyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThibaultJanBeyer/thibaultjanbeyer.com-v10/issues"
+  },
+  "homepage": "https://github.com/ThibaultJanBeyer/thibaultjanbeyer.com-v10#readme"
+}
