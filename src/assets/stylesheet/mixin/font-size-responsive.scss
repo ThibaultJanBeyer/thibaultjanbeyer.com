@@ -1,0 +1,10 @@
+@mixin font-size-responsive($sizes: $gamma) {
+  font-size: nth($sizes, 1) * 1px;
+  line-height: $line-height;
+  letter-spacing: .5px;
+
+  @include media('>medium') {
+    font-size: nth($sizes, 2) * 1px;
+    letter-spacing: .4px;
+  }
+}

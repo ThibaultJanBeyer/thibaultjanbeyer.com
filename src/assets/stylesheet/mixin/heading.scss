@@ -1,0 +1,29 @@
+/*
+ * 1. Magic number to redunce hanging text
+ */
+@mixin heading-alpha {
+  @include font-size-responsive($alpha);
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  line-height: $line-height--small;
+  margin-bottom: 10px;
+  text-indent: 3px; /* 1 */
+}
+
+@mixin heading-beta {
+  @include font-size-responsive($beta);
+  font-weight: bold;
+  line-height: $line-height--small;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin teaser-heading {
+  color: $primary;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: $line-height--small;
+  margin-bottom: $gutter--small;
+  -webkit-font-smoothing: antialiased;
+}

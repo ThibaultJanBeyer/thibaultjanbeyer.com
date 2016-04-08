@@ -1,0 +1,8 @@
+.section-one__title {
+  @include heading-alpha;
+}
+
+.section-one__text {
+  width: 500px;
+  margin: 50px;
+}
