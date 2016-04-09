@@ -5,7 +5,7 @@ $.imagemin = require('gulp-imagemin');
 $.size = require('gulp-size');
 
 var imgSrc = './src/assets/img/**/*',
-    imgDst = './app/assets/img';
+    imgDst = './dist/assets/img';
 
 module.exports = function () {
     return gulp.src(imgSrc)
