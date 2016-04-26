@@ -7,7 +7,10 @@ html, body {
   overflow-x: hidden;
 }
 
-// KERNING
+main {
+  max-width: 1600px;
+}
+
 .copy {
   color: #333;
   -moz-osx-font-smoothing: grayscale;
