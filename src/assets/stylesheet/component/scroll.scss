@@ -1,0 +1,15 @@
+.scroll {
+  transform: translate3D(0, 5%, 0);
+  will-change: transform;
+}
+
+.scroll--permanent {
+  transform: translate3D(0, 0, 0);
+  transition: transform 0.2s ease-out;
+}
+
+/*
+.scroll--start {
+  transform: translateY(0);
+}
+*/

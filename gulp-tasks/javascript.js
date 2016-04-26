@@ -8,7 +8,7 @@ $.jshint = require('gulp-jshint');
 $.uglify = require('gulp-uglify');
 $.size = require('gulp-size');
 
-var jsSrc = './src/assets/javascript/*.js',
+var jsSrc = './src/assets/javascript/**/*.js',
     jsDst = './dist/assets/javascript/';
 
 module.exports = function () {
