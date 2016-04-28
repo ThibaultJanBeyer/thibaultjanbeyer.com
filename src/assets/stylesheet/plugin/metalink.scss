@@ -1,0 +1,20 @@
+/* http://codepen.io/ThibaultJanBeyer/pen/vGprqE */
+/* 
+ * 1. reset for normal link color in O-mini and old browsers
+ * 2. increase distance of underline
+ */
+.metalink {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 43%, rgba(150, 231, 251, 1) 43%, rgba(150, 231, 251, 1) 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
+  background-position: 0% 0%;
+  background-size: 100% 220%;
+  color: unset; /* 1. */
+  text-decoration: none;
+  transition: background-position .1s ease-out;
+  padding-bottom: 3px; /* 2. */
+}
+
+.metalink:hover,
+.metalink:active,
+.metalink:focus {
+  background-position: 0% 35%;
+}

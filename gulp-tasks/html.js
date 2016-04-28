@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 $.changed = require('gulp-changed');
-$.htmlhint = require("gulp-htmlhint");
+$.htmlhint = require('gulp-htmlhint');
 $.htmlmin = require('gulp-htmlmin');
 $.plumber = require('gulp-plumber');
 $.size = require('gulp-size');

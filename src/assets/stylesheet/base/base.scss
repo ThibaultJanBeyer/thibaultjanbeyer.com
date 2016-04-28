@@ -3,9 +3,14 @@
 
 html, body {
   background: #f6f6f6;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-// KERNING
+main {
+  max-width: 1600px;
+}
+
 .copy {
   color: #333;
   -moz-osx-font-smoothing: grayscale;
@@ -21,8 +26,16 @@ section {
   min-height: 100vh;
 }
 
-p {
-  @include font-size-responsive($gamma);
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 300;
+/**
+ * for screen readers only (accessibility)
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
