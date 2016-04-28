@@ -11,9 +11,9 @@ $ gulp
 2. creates the distribution folder
 
 My local folder structure looks like this:
-> dist –– the clean distribution folder
-> gulp-tasks –– managing gulp
-> originals –– this folder holds all the .psd, .ai and other originals
-> src –– the working folder
+> dist –– the clean distribution folder  
+> gulp-tasks –– managing gulp  
+> originals –– this folder holds all the .psd, .ai and other originals  
+> src –– the working folder  
 
 *Note: you can find all versions of my website (starting at version 1 made in 2002) via http://blog.thibaultjanbeyer.com/portfolio/older-versions-of-my-website/*
