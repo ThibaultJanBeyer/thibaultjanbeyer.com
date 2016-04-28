@@ -1,0 +1,12 @@
+.section-two-work {
+  padding: 10px;
+}
+
+.section-two-work__image {
+  width: 100%;
+}
+
+.section-two-work__title {
+  @include heading-beta;
+  margin-bottom: 15px;
+}

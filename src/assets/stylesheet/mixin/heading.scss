@@ -13,7 +13,8 @@
 
 @mixin heading-beta {
   @include font-size-responsive($beta);
-  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   line-height: $line-height--small;
   -webkit-font-smoothing: antialiased;
 }
