@@ -36,6 +36,7 @@
 .section-one-info__title {
   @include heading-alpha;
   margin-bottom: 30px;
+  text-shadow: 1px 1px 0px $white, 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .section-one-info__text {
