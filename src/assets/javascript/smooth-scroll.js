@@ -1,7 +1,9 @@
-////
-// smoothScroll by Robin Leve via http://codepen.io/rleve/pen/iCbgy
-// enhanced
-////
+/**
+ * 
+ * The smooth scroll when clicking an insite-link
+ * Based on Robin Leves smoothScroll plugin via http://codepen.io/rleve/pen/iCbgy
+ * 
+ */
 var smoothScroll = function (anchor, duration) {
 
   // Calculate how far and how fast to scroll
@@ -62,7 +64,7 @@ var scrollToggle = document.querySelectorAll("a[href^='#']");
       // If the anchor exists
       if (dataTarget) {
           // Scroll to the anchor
-          smoothScroll(dataTarget, 500);
+          smoothScroll(dataTarget, 700);
       }
 
   }, false);
