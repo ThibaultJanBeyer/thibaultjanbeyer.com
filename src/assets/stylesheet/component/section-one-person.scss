@@ -1,19 +1,15 @@
 .section-one-person {
-  align-items: center;
-  display: flex;
-  height: 125%;
-  justify-content: center;
+  height: 135%;
   margin-left: 50%;
   position: absolute;
   width: 50%;
   z-index: 1;
 
   @include media('>medium') {
-    justify-content: flex-start;
     margin-left: 0;
     position: static;
     width: 55%;
-    height: 170%;
+    height: 200%;
   }
 }
 
@@ -22,7 +18,7 @@
   width: 100%;
 
   @include media('>medium') {
-    margin-top: 5%;
+    margin-top: 20%;
   }
 }
 
