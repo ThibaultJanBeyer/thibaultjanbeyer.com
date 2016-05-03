@@ -20,7 +20,7 @@ module.exports = function () {
         this.emit('end');
       }
     }))
-    .pipe($.jshint())
+    .pipe($.jshint({ esnext: true }))
     .pipe($.jshint.reporter('default'))
     .pipe($.babel({ presets: ['es2015'] }))
     .pipe($.concat('bundle.js'))

@@ -1,7 +1,7 @@
 .section-one-person {
   align-items: center;
   display: flex;
-  height: 130%;
+  height: 125%;
   justify-content: center;
   margin-left: 50%;
   position: absolute;
@@ -10,10 +10,19 @@
 
   @include media('>medium') {
     justify-content: flex-start;
+    margin-left: 0;
+    position: static;
+    width: 55%;
+    height: 170%;
   }
+}
 
-  @include media('>xlarge') {
-    margin-left: 55%;
+.section-one-person__container {
+  height: 100%;
+  width: 100%;
+
+  @include media('>medium') {
+    margin-top: 5%;
   }
 }
 
@@ -21,5 +30,5 @@
   height: 100%;
   max-width: 100%;
   object-fit: cover;
-  object-position: 35% 50%;
+  object-position: 30% 50%;
 }
