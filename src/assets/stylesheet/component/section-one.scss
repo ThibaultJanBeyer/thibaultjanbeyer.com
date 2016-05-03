@@ -1,0 +1,10 @@
+.section-one {
+  min-height: 100vh;
+
+  @include media('>medium') {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+  }
+}
