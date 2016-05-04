@@ -5,20 +5,9 @@
 
 .scroll--permanent {
   transform: translate3D(0, 0, 0);
-  transition: transform 0.2s ease-out;
+  transition: transform 0.4s;
 }
 
 .scroll--special {
   transform: translate3D(0, 0, 0);
 }
-
-.scroll--sticky {
-  transform: translate3D(0, 0, 0);
-  transition: none;
-}
-
-/*
-.scroll--start {
-  transform: translateY(0);
-}
-*/

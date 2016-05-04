@@ -5,22 +5,22 @@
  */
 (function() {
   // save all elements with .scroll
-  var scrollElements = document.getElementsByClassName("scroll"),
-      welcome = document.getElementById("welcome"),
-      passedScroll = [],
-      scrolling = [],
-      stuck = false;
+  var scrollElements = document.getElementsByClassName("scroll");
+  var welcome = document.getElementById("welcome");
+  var steps = welcome.offsetHeight / 12;
+  // partage section in 9 to get 9 step, one for each img
+  var step = [steps, steps * 2, steps * 3, steps * 4, steps * 5, steps * 6, steps * 7, steps * 8, steps * 9, steps * 10];
+  var passedScroll = [];
+  var scrolling = [];
+  var stuck = false;
+  var windowScrollTop;
+  var inView = false;
 
   window.onscroll = (function(e) {
-    var windowScrollLeft = (window.scrollX !== undefined) ? window.scrollX : (document.documentElement || document.body.parentNode || document.body).scrollLeft;
-    var windowScrollTop = (window.scrollY !== undefined) ? window.scrollY : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    // check if the element is in view and do the trick
-    inView(windowScrollTop, windowScrollLeft);
-  });
 
-  // function to check if elements are in view
-  function inView(windowScrollTop, windowScrollLeft) {
-    
+    windowScrollTop = (window.scrollY !== undefined) ? window.scrollY : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+
+    // check if the element is in view and do the trick
     // runs a for loop on every element executing what is in the function 
     forEach(scrollElements, function (index, element) {
       // get custom speed
@@ -30,36 +30,41 @@
       
       // if the bottom position of the element is higher than 0, thus in view
       if( rect.bottom >= 0 && rect.top < welcome.offsetHeight ) {
-        // get the position of screen to substract that to the scrolling 
+        // get the position of screen to substract that to the scrolling only get it the first time the object is in view
         if (!passedScroll[index]) {
           passedScroll[index] = windowScrollTop;
         }
 
         // Animating the main IMG
         if ( element.classList.contains("section-one-person__img") === true ) {
-          // partage section in 9 to get 9 steps
-          var steps = welcome.offsetHeight / 10;
+          // check if element is in view
+          if ( windowScrollTop < step[8] && inView === false ) {
+            inView = true;
+          }
           // map an img to each step
-          if (windowScrollTop <= steps * 1) {
-            thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 9 +".jpg");
-          } else if (windowScrollTop >= steps * 1 && windowScrollTop <= steps * 2) {
-            thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 8 +".jpg");
-          } else if (windowScrollTop >= steps * 2 && windowScrollTop <= steps * 3) {
-            thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 7 +".jpg");
-          } else if (windowScrollTop >= steps * 3 && windowScrollTop <= steps * 4) {
-            thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 6 +".jpg");
-          } else if (windowScrollTop >= steps * 4 && windowScrollTop <= steps * 5) {
-            thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 5 +".jpg");
-          } else if (windowScrollTop >= steps * 5 && windowScrollTop <= steps * 6) {
-            thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 4 +".jpg");
-          } else if (windowScrollTop >= steps * 6 && windowScrollTop <= steps * 7) {
-            thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 3 +".jpg");
-          } else if (windowScrollTop >= steps * 7 && windowScrollTop <= steps * 8) {
-            thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 2 +".jpg");
-          } else if (windowScrollTop >= steps * 8 && windowScrollTop <= steps * 9) {
-            thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 1 +".jpg");
-          } else if (windowScrollTop >= steps * 9) {
-            thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 0 +".jpg");
+          if ( inView === true ) {
+            if ( windowScrollTop > step[8] ) {
+              inView = false;
+              thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 0 +".jpg");
+            } else if (windowScrollTop <= step[0] ) {
+              thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 9 +".jpg");
+            } else if (windowScrollTop >= step[0] && windowScrollTop <= step[1]) {
+              thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 8 +".jpg");
+            } else if (windowScrollTop >= step[1] && windowScrollTop <= step[2]) {
+              thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 7 +".jpg");
+            } else if (windowScrollTop >= step[2] && windowScrollTop <= step[3]) {
+              thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 6 +".jpg");
+            } else if (windowScrollTop >= step[3] && windowScrollTop <= step[4]) {
+              thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 5 +".jpg");
+            } else if (windowScrollTop >= step[4] && windowScrollTop <= step[5]) {
+              thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 4 +".jpg");
+            } else if (windowScrollTop >= step[5] && windowScrollTop <= step[6]) {
+              thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 3 +".jpg");
+            } else if (windowScrollTop >= step[6] && windowScrollTop <= step[7]) {
+              thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 2 +".jpg");
+            } else if (windowScrollTop >= step[7] && windowScrollTop <= step[8]) {
+              thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 1 +".jpg");
+            }
           }
         }
 
@@ -71,14 +76,6 @@
         } else {
           element.classList.add("scroll--start");
         }
-
-        /*// Animating Stickiess
-        if ( element.classList.contains("scroll--sticky") === true && !stuck ) {
-          stuck = true;
-          element.classList.add("scroll--stuck");
-          element.style.transform = "translate3D(0, " + scrolling[index] + "%, 0)";
-        }*/
-
       } else {
         element.classList.remove("scroll--start");
         stuck = false;
@@ -86,6 +83,6 @@
 
     });
 
-  }
+  });
 
 })();
