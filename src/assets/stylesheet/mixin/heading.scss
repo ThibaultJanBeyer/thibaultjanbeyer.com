@@ -3,7 +3,6 @@
  */
 @mixin heading-alpha {
   @include font-size-responsive($alpha);
-  -webkit-font-smoothing: antialiased;
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-weight: 700;
@@ -13,16 +12,18 @@
 
 @mixin heading-beta {
   @include font-size-responsive($beta);
-  font-weight: bold;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: italic;
+  font-weight: 500;
   line-height: $line-height--small;
-  -webkit-font-smoothing: antialiased;
 }
 
-@mixin teaser-heading {
-  color: $primary;
-  font-size: 20px;
-  font-weight: bold;
+@mixin heading-teaser {
+  @include font-size-responsive($alpha);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  color: $white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   line-height: $line-height--small;
-  margin-bottom: $gutter--small;
-  -webkit-font-smoothing: antialiased;
 }

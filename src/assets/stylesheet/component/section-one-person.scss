@@ -1,15 +1,22 @@
 .section-one-person {
-  height: 135%;
+  bottom: -45%;
+  height: 165%;
   margin-left: 50%;
   position: absolute;
   width: 50%;
   z-index: 1;
 
+  @include media('>small') {
+    bottom: -55%;
+    height: 175%;
+  }
+
   @include media('>medium') {
+    bottom: inherit;
+    height: 190%;
     margin-left: 0;
     position: static;
     width: 55%;
-    height: 200%;
   }
 }
 

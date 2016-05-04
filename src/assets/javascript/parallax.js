@@ -5,7 +5,11 @@
  */
 (function() {
   // save all elements with .scroll
-  var scrollElements = document.getElementsByClassName("scroll");
+  var scrollElements = document.getElementsByClassName("scroll"),
+      welcome = document.getElementById("welcome"),
+      passedScroll = [],
+      scrolling = [],
+      stuck = false;
 
   window.onscroll = (function(e) {
     var windowScrollLeft = (window.scrollX !== undefined) ? window.scrollX : (document.documentElement || document.body.parentNode || document.body).scrollLeft;
@@ -14,23 +18,27 @@
     inView(windowScrollTop, windowScrollLeft);
   });
 
-  // checks if elements are in view
+  // function to check if elements are in view
   function inView(windowScrollTop, windowScrollLeft) {
-
+    
     // runs a for loop on every element executing what is in the function 
     forEach(scrollElements, function (index, element) {
       // get custom speed
       var dataSpeed = element.getAttribute("data-scroll--speed") || 100;
       // stores the position values of the current element
       var rect = element.getBoundingClientRect();
-
+      
       // if the bottom position of the element is higher than 0, thus in view
-      if( rect.bottom >= 0 ) {
+      if( rect.bottom >= 0 && rect.top < welcome.offsetHeight ) {
+        // get the position of screen to substract that to the scrolling 
+        if (!passedScroll[index]) {
+          passedScroll[index] = windowScrollTop;
+        }
 
         // Animating the main IMG
         if ( element.classList.contains("section-one-person__img") === true ) {
           // partage section in 9 to get 9 steps
-          var steps = document.getElementById("welcome").offsetHeight / 10;
+          var steps = welcome.offsetHeight / 10;
           // map an img to each step
           if (windowScrollTop <= steps * 1) {
             thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ 9 +".jpg");
@@ -57,12 +65,23 @@
 
         // Animating Regular scrolls
         if ( element.classList.contains("scroll--permanent") === true ) {
-          element.style.transform = "translate3D(0, " + -windowScrollTop/dataSpeed + "%, 0)";
+          // pixel position of window scroll (i.e. 500) - already passed pixels until object was seen (i.e. 50) / speed
+          scrolling[index] = ((windowScrollTop - passedScroll[index]) / dataSpeed) * -1;
+          element.style.transform = "translate3D(0, " + scrolling[index] + "%, 0)";
         } else {
           element.classList.add("scroll--start");
         }
+
+        /*// Animating Stickiess
+        if ( element.classList.contains("scroll--sticky") === true && !stuck ) {
+          stuck = true;
+          element.classList.add("scroll--stuck");
+          element.style.transform = "translate3D(0, " + scrolling[index] + "%, 0)";
+        }*/
+
       } else {
         element.classList.remove("scroll--start");
+        stuck = false;
       }
 
     });

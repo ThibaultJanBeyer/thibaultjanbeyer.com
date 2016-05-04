@@ -2,7 +2,6 @@
  * Link styles on light background.
  */
 @mixin link-styles {
-  color: $primary;
   text-decoration: none;
 
   &:visited {
@@ -11,7 +10,7 @@
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
