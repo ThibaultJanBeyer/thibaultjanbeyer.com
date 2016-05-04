@@ -12,9 +12,20 @@
 
 .section-two__title {
   @include heading-teaser;
-  margin: 125px 0 0 35px;
-  margin-top: 35vh;
   position: absolute;
+  margin: 250px 0 0 35px;
+
+  @include media('>small') {
+    margin-top: 350px;
+  }
+
+  @include media('>large') {
+    margin-top: 450px;
+  }
+
+  @include media('>large') {
+    margin-top: 550px;
+  }
 }
 
 .section-two__zigzag {

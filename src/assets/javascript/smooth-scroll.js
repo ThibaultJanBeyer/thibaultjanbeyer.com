@@ -64,7 +64,7 @@ var scrollToggle = document.querySelectorAll("a[href^='#']");
       // If the anchor exists
       if (dataTarget) {
           // Scroll to the anchor
-          smoothScroll(dataTarget, 700);
+          smoothScroll(dataTarget, 500);
       }
 
   }, false);
