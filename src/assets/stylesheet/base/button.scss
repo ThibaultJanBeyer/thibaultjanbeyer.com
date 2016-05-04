@@ -2,12 +2,19 @@
  * This is a reset base for further formatting our buttons with modifiers to look either like buttons or text links.
  */
 .button {
-  font-size: 16px; // temp, has to be resetted to be responsive
+  @include font-size-responsive;
   background-color: transparent;
   border: 0;
   cursor: pointer;
   display: inline-block;
-  font-family: inherit;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
   padding: 0;
   text-decoration: none;
+}
+
+.button--large {
+  margin: 0 auto 150px auto;
+  margin: 0 auto 30vh auto;
+  display: inherit;
 }
