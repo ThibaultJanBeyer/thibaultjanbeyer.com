@@ -80,7 +80,7 @@
         </div>
       </div>
 
-      <button class="button button--large metalink copy">
+      <button class="button button--large metalink copy" type="button" data-a11y-dialog-show="more-works">
         see more works
       </button>
 
@@ -96,12 +96,26 @@
 
     </section>
 
+    <footer class="footer" role="contentinfo">
+      <p class="footer__copyright">Thibault Jan Beyer</p>
+    </footer>
+
   </main>
 
-  <footer class="footer" role="contentinfo">
+  <div class="more-works more-works--start" aria-hidden="true" id="more-works">
+    <div tabindex="-1" data-a11y-dialog-hide></div>
+    <div class="dialog-content" aria-labelledby="dialogTitle" aria-describedby="dialogDescription" role="dialog">
+      <div role="document">
+        <h1 id="dialogTitle">More Works</h1>
 
-    <p class="footer__copyright">Thibault Jan Beyer</p>
-  </footer>
+        <p id="dialogDescription">See almost all works I’ve ever done!</p>
+
+        <button type="button" data-a11y-dialog-hide class="dialog-close" aria-label="Close this dialog window">
+          &times;
+        </button>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/javascript/bundle.js"></script> 
 </body>

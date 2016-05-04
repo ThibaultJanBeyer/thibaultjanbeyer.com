@@ -6,9 +6,10 @@ html, body {
   width: 100%;
 }
 
-main {
+#main {
   max-width: 1600px;
   margin: auto;
+  transition: transform 1s;
 }
 
 .copy {
