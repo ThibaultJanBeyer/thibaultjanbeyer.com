@@ -1,0 +1,35 @@
+.more-works-work {
+  height: 100px;
+  width: 150px;
+  margin: 20px;
+}
+
+.more-works-work__container {
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
+}
+
+.more-works-work__container:hover .more-works-work__img,
+.more-works-work__container:active .more-works-work__img,
+.more-works-work__container:focus .more-works-work__img {
+  outline: 5px solid $primary;
+}
+
+.more-works-work__img {
+  max-height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  outline: 1px solid transparent;
+  width: 100%;
+  transition: outline 0.2s ease-out;
+  will-change: outline;
+}
+
+.more-works-work__title {
+  @include font-size-responsive;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  color: $off-black;
+}

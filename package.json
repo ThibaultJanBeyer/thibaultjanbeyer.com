@@ -14,6 +14,7 @@
     "gulp-clean": "*",
     "gulp-concat": "*",
     "gulp-csso": "*",
+    "gulp-data": "^1.2.1",
     "gulp-htmlhint": "*",
     "gulp-htmlmin": "*",
     "gulp-imagemin": "*",
@@ -24,6 +25,7 @@
     "gulp-scss-lint": "*",
     "gulp-size": "*",
     "gulp-svg-sprite": "*",
+    "gulp-swig": "^0.8.0",
     "gulp-uglify": "*"
   },
   "repository": {

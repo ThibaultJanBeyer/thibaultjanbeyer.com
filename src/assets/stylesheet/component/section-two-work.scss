@@ -30,14 +30,8 @@
   }
 }
 
-.section-two-work__container:hover .metalink,
-.section-two-work__container:active .metalink,
-.section-two-work__container:focus .metalink {
-  background-position: 0% 35%;
-}
-
 .section-two-work__image {
-  outline: 1px solid $white;
+  outline: 1px solid transparent;
   transition: outline .2s ease-out;
   width: 100%;
   will-change: outline;
@@ -46,12 +40,14 @@
 .section-two-work__container:hover .section-two-work__image,
 .section-two-work__container:active .section-two-work__image,
 .section-two-work__container:focus .section-two-work__image {
-  outline: 5px solid $blue;
+  outline: 5px solid $primary;
+}
+
+.section-two-work__container {
+  text-decoration: none;
 }
 
 .section-two-work__title {
-  //@include heading-beta;
-  //text-shadow: 1px 1px 0px $white, 2px 2px 2px rgba(0, 0, 0, 0.2);
   @include heading-beta;
   font-weight: 500;
   margin-top: -10px;

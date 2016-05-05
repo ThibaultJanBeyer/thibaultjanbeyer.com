@@ -1,13 +1,13 @@
-// Plugin
-@import 'plugin/includemedia';
-@import 'plugin/metalink';
-@import 'plugin/reset';
-
 // Variable
 @import 'variable/breakpoint';
 @import 'variable/color';
 @import 'variable/layout';
 @import 'variable/typography';
+
+// Plugin
+@import 'plugin/includemedia';
+@import 'plugin/metalink';
+@import 'plugin/reset';
 
 // Mixin
 @import 'mixin/font-size-responsive';
@@ -22,6 +22,7 @@
 
 // Component
 @import 'component/more-works';
+@import 'component/more-works-work';
 @import 'component/scroll';
 @import 'component/section-one';
 @import 'component/section-one-info';
