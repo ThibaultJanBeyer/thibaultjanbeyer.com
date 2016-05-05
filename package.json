@@ -19,13 +19,12 @@
     "gulp-htmlmin": "*",
     "gulp-imagemin": "*",
     "gulp-jshint": "*",
-    "gulp-load-plugins": "*",
+    "gulp-nunjucks-render": "^2.0.0",
     "gulp-plumber": "*",
     "gulp-sass": "*",
     "gulp-scss-lint": "*",
     "gulp-size": "*",
     "gulp-svg-sprite": "*",
-    "gulp-swig": "^0.8.0",
     "gulp-uglify": "*"
   },
   "repository": {

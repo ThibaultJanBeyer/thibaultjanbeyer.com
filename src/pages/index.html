@@ -1,0 +1,19 @@
+<!-- index nunjucks -->
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+  <main class="site-content" id="main" aria-label="Content">
+    <!-- Welcome -->
+    {% include "partials/welcome.html" %}
+    <!-- Works -->
+    {% include "partials/works.html" %}
+    {% include "partials/profile.html" %}
+    {% include "partials/contact.html" %}
+    {% include "partials/footer.html" %}
+  </main>
+
+  {% include "partials/more-works.html" %}
+
+{% endblock %}

@@ -1,8 +1,8 @@
-.section-two {
+.works {
   margin: 50px 0;
 }
 
-.section-two__container {
+.works__container {
   @include media('>small') {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +10,7 @@
   }
 }
 
-.section-two__title {
+.works__title {
   @include heading-teaser;
   position: absolute;
   margin: 250px 0 0 35px;
@@ -28,7 +28,7 @@
   }
 }
 
-.section-two__zigzag {
+.works__zigzag {
   bottom: -40px;
   left: 0px;
   position: absolute;

@@ -1,4 +1,4 @@
-.section-two-work {
+.works-work {
   margin: 50px auto 0;
   padding: 20px;
   position: relative;
@@ -6,7 +6,7 @@
   z-index: 2;
 }
 
-.section-two-work--first {
+.works-work--first {
   @include media('>small') {
     margin: 50px 0 0 15px;
     margin-top: 20vh;
@@ -14,7 +14,7 @@
   }
 }
 
-.section-two-work--second {
+.works-work--second {
   @include media('>small') {
     margin: 175px 0 0 0;
     margin-top: 45vh;
@@ -22,7 +22,7 @@
   }
 }
 
-.section-two-work--third {
+.works-work--third {
   @include media('>small') {
     margin: 45px auto 0;
     margin-top: 15vh;
@@ -30,24 +30,24 @@
   }
 }
 
-.section-two-work__image {
+.works-work__image {
   outline: 1px solid transparent;
   transition: outline .2s ease-out;
   width: 100%;
   will-change: outline;
 }
 
-.section-two-work__container:hover .section-two-work__image,
-.section-two-work__container:active .section-two-work__image,
-.section-two-work__container:focus .section-two-work__image {
+.works-work__container:hover .works-work__image,
+.works-work__container:active .works-work__image,
+.works-work__container:focus .works-work__image {
   outline: 5px solid $primary;
 }
 
-.section-two-work__container {
+.works-work__container {
   text-decoration: none;
 }
 
-.section-two-work__title {
+.works-work__title {
   @include heading-beta;
   font-weight: 500;
   margin-top: -10px;
@@ -59,19 +59,19 @@
   }
 }
 
-.section-two-work__title--first {
+.works-work__title--first {
   position: absolute;
   right: 0;
   text-align: right;
 }
 
-.section-two-work__title--second {
+.works-work__title--second {
   left: 0;
   position: absolute;
   text-align: left;
 }
 
-.section-two-work__title--third {
+.works-work__title--third {
   left: 15%;
   position: absolute;
   text-align: center;

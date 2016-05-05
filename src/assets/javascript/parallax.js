@@ -36,7 +36,7 @@
         }
 
         // Animating the main IMG
-        if ( element.classList.contains("section-one-person__img") === true ) {
+        if ( element.classList.contains("welcome-person__img") === true ) {
           // check if element is in view
           if ( windowScrollTop < step[8] && inView === false ) {
             inView = true;

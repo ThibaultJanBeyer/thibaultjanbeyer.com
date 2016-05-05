@@ -1,0 +1,48 @@
+{
+  "featuredWorks": [
+    {
+      "modifier": "first",
+      "title": "branding for a popband",
+      "url": "http://blog.thibaultjanbeyer.com/portfolio/the-vanilla-band/",
+      "src": "assets/img/work/TJB-TheVanilla_Identity.jpg",
+      "alt": "The vanila pop band, branding, website"
+    },
+    {
+      "modifier": "second",
+      "title": "redesign of a tampons packaging",
+      "url": "http://blog.thibaultjanbeyer.com/portfolio/tampons-packaging/",
+      "src": "assets/img/work/tampons-redesign.jpg",
+      "alt": "Redesign of a tampons packaging"
+    },
+    {
+      "modifier": "third",
+      "title": "an ipad app for children",
+      "url": "http://blog.thibaultjanbeyer.com/portfolio/digital-publishing-the-adventures-of-packy/",
+      "src": "assets/img/work/packy-app.jpg",
+      "alt": "Packy digital publishing app for ipad"
+    }
+  ],
+  "works": [
+    {
+      "title": "test",
+      "url": "#",
+      "src": "https://unsplash.it/200/300",
+      "alt": "bla"
+    }, {
+      "title": "bar",
+      "url": "#",
+      "src": "https://unsplash.it/300/200",
+      "alt": "bla"
+    }, {
+      "title": "ff",
+      "url": "#",
+      "src": "https://unsplash.it/300/200",
+      "alt": "bla"
+    }, {
+      "title": "ff",
+      "url": "#",
+      "src": "https://unsplash.it/300/200",
+      "alt": "bla"
+    }
+  ]
+}

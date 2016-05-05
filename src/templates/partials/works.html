@@ -1,0 +1,28 @@
+<!-- works nunjuck -->
+
+<section id="works" class="section works">
+  <h2 class="copy works__title">
+    Portfolio
+    <img src="assets/img/zigzag.png" class="works__zigzag" alt="-">
+  </h2>
+
+  <div class="works__container">
+    {% for featuredWork in featuredWorks %}
+    <div class="works-work works-work--{{ featuredWork.modifier }} scroll scroll--permanent"
+        data-scroll--speed="40">
+      <a href="{{ featuredWork.url }}" target="_blank" class="works-work__container">
+        <img src="{{ featuredWork.src }}" alt="{{ featuredWork.alt }}" class="works-work__image">
+        <h3 class="works-work__title works-work__title--{{ featuredWork.modifier }} copy scroll scroll--permanent"
+        data-scroll--speed="10">
+          {{ featuredWork.title }}
+        </h3>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+
+  <button class="button button--large metalink copy" type="button" data-a11y-dialog-show="more-works">
+    see more works
+  </button>
+
+</section>

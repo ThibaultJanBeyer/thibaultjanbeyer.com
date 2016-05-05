@@ -1,9 +1,7 @@
 var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
-$.changed = require('gulp-changed');
-$.imagemin = require('gulp-imagemin');
-$.svgSprite = require('gulp-svg-sprite');
-$.size = require('gulp-size');
+var imagemin = require('gulp-imagemin');
+var svgSprite = require('gulp-svg-sprite');
+var size = require('gulp-size');
 
 var svgSrc = './src/assets/svg/*.svg',
     svgDst = './dist/assets/svg/';
@@ -30,9 +28,8 @@ var options = {
 
 module.exports = function () {
   return gulp.src(svgSrc)
-    .pipe($.changed(svgDst))
-    .pipe($.svgSprite(options))
-    .pipe($.imagemin(svgOptions))
-    .pipe($.size({title: 'SVG'}))
+    .pipe(svgSprite(options))
+    .pipe(imagemin(svgOptions))
+    .pipe(size({title: 'SVG'}))
     .pipe(gulp.dest(svgDst));
 };
