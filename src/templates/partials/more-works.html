@@ -12,22 +12,28 @@
       <h1 id="dialogTitle" class="more-works__title copy">More Works</h1>
       <img src="assets/img/zigzag.png" class="more-works__zigzag" alt="-">
       <p id="dialogDescription" class="more-works__description copy">See almost all works I’ve ever done!</p>
-      
-      <h2 class="more-works__year">2016</h2>
-      <div class="more-works__container">
 
-        {% for work in works %}
-        <div class="more-works-work">
-          <a href="{{ work.url }}" class="more-works-work__container">
-            <img src="{{ work.src }}" alt="{{ work.alt }}" class="more-works-work__img">
-            <h3 class="more-works-work__title">
-              {{ work.title }}
-            </h3>
-          </a>
-        </div>
+        {% for year, works in allWorks %}
+
+          <h2 class="more-works__year">{{ year }}</h2>
+          <div class="more-works__container">
+
+            {% for work in works %}
+
+              <div class="more-works-work">
+                <a href="{{ work.url }}" class="more-works-work__container">
+                  <img src="{{ work.src }}" alt="{{ work.alt }}" class="more-works-work__img">
+                  <h3 class="more-works-work__title">
+                    {{ work.title }}
+                  </h3>
+                </a>
+              </div>
+
+            {% endfor %}
+
+          </div>
+
         {% endfor %}
-        
-      </div>
 
     </div>
   </div>

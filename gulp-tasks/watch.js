@@ -6,7 +6,7 @@ function log (event) {
 
 module.exports = function () {
   const watchers = [
-    gulp.watch('./src/index.html', ['html']).on('change', log),
+    gulp.watch('./src/**/*.html', ['html']).on('change', log),
     gulp.watch('./src/data.json', ['html']).on('change', log),
     gulp.watch('./src/assets/svg/**/*', ['svg']).on('change', log),
     gulp.watch('./src/assets/img/**/*', ['img']).on('change', log),

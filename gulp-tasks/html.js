@@ -17,6 +17,12 @@ var getJsonData = function() {
 
 module.exports = function () {
   return gulp.src(htmlSrc)
+    .pipe(plumber({
+      errorHandler: function (err) {
+        console.log(err);
+        this.emit('end');
+      }
+    }))
     .pipe(data(getJsonData))
     .pipe(nunjucksRender({ path: ['./src/templates'] }))
     .pipe(plumber({
