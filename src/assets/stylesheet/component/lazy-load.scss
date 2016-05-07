@@ -1,0 +1,20 @@
+img[data-src] {
+	opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+img[data-src] + h3::before {
+  content: 'Loading...';
+  color: $primary;
+  position: absolute;
+  margin: -50px 0;
+}
+
+img[data-src].loaded + h3::before {
+  display: none;
+}
+
+img[data-src].loaded {
+	opacity: 1;
+  transition: opacity 0.2s ease-out;
+}

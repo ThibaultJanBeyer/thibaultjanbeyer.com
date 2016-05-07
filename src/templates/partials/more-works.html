@@ -21,8 +21,8 @@
             {% for work in works %}
 
               <div class="more-works-work">
-                <a href="{{ work.url }}" class="more-works-work__container">
-                  <img src="{{ work.src }}" alt="{{ work.alt }}" class="more-works-work__img">
+                <a href="{{ work.url }}" target="_blank" class="more-works-work__container">
+                  <img data-src="{{ work.src }}" alt="{{ work.alt }}" class="more-works-work__img">
                   <h3 class="more-works-work__title">
                     {{ work.title }}
                   </h3>

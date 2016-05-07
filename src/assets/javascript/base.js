@@ -1,5 +1,8 @@
 'use strict'; // jshint -W097
-
+/*
+ * Globals
+ */
+var worksOpen = false;
 /*
  *
  * forEach method run like this:

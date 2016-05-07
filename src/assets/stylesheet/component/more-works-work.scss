@@ -1,7 +1,11 @@
 .more-works-work {
   height: 100px;
-  width: 150px;
-  margin: 20px;
+  width: 250px;
+  margin: 40px 0;
+
+  @include media('>small') {
+    margin: 30px 30px 30px 0;
+  }
 }
 
 .more-works-work__container {
