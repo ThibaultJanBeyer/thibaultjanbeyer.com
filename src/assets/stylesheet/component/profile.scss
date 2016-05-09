@@ -1,0 +1,6 @@
+.profile__title {
+  @include heading-teaser;
+  margin: 250px 0 0 25px;
+  position: absolute;
+  z-index: 2;
+}

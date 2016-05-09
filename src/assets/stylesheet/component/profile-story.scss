@@ -1,0 +1,66 @@
+.profile-story {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-story__left {
+  width: 45%;
+
+  @include media('>small') {
+    width: 30%;
+  }
+
+  @include media('>medium') {
+    width: 20%;
+  }
+
+  @include media('>large') {
+    width: 15%;
+  }
+
+  @include media('>xlarge') {
+    width: 10%;
+  }
+}
+
+.profile-story__right {
+  width: 55%;
+
+  @include media('>small') {
+    width: 70%;
+  }
+
+  @include media('>medium') {
+    width: 80%;
+  }
+
+  @include media('>large') {
+    width: 85%;
+  }
+
+  @include media('>xlarge') {
+    width: 90%;
+  }
+}
+
+.profile-story__text {
+  @include font-size-responsive($gamma);
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  margin: 20px 10px 0 25px;
+}
+
+.profile-story__img-container {
+  height: 380px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.profile-story__img {
+  height: 150%;
+  max-width: 2500px;
+  object-fit: cover;
+  object-position: 0 40%;
+  width: 100%;
+}

@@ -1,13 +1,9 @@
 .scroll {
-  transform: translate3D(0, 5%, 0);
+  transform: translate3D(0, 0, 0);
   will-change: transform;
 }
 
 .scroll--permanent {
   transform: translate3D(0, 0, 0);
   transition: transform 0.4s;
-}
-
-.scroll--special {
-  transform: translate3D(0, 0, 0);
 }

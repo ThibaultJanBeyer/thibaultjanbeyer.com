@@ -8,8 +8,8 @@ module.exports = function () {
   const watchers = [
     gulp.watch('./src/**/*.html', ['html']).on('change', log),
     gulp.watch('./src/data.json', ['html']).on('change', log),
-    gulp.watch('./src/assets/svg/**/*', ['svg']).on('change', log),
-    gulp.watch('./src/assets/img/**/*', ['img']).on('change', log),
+    gulp.watch('./src/assets/svg/**/*.svg', ['svg']).on('change', log),
+    gulp.watch('./src/assets/img/**/*.+(jpg|jpeg|gif|png)', ['img']).on('change', log),
     gulp.watch('./src/assets/stylesheet/**/*.scss', ['sass']).on('change', log),
     gulp.watch('./src/assets/javascript/**/*.js', ['javascript']).on('change', log)
   ];
