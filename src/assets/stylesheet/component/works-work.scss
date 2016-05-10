@@ -8,16 +8,16 @@
 
 .works-work--first {
   @include media('>small') {
-    margin: 50px 0 0 15px;
+    margin: 50px 0 0 0;
     margin-top: 20vh;
-    width: 35%;
+    width: 30%;
   }
 }
 
 .works-work--second {
   @include media('>small') {
-    margin: 175px 0 0 0;
-    margin-top: 45vh;
+    margin: 200px 0 0 0;
+    margin-top: 60vh;
     width: 45%;
   }
 }
@@ -25,8 +25,8 @@
 .works-work--third {
   @include media('>small') {
     margin: 45px auto 0;
-    margin-top: 15vh;
-    width: 60%;
+    margin-top: 30vh;
+    width: 55%;
   }
 }
 
