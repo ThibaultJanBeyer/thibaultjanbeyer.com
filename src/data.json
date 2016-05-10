@@ -403,5 +403,121 @@
         "alt": "version 1 of my personal portfolio in french and red, black green and blue, using flash and framed layout"
       }
     ]
+  },
+  "allPlacements": {
+    "education": [
+      {
+        "title": "communications design",
+        "info": "2013 - today • studies",
+        "description": [
+          "at Cologne Design Academy (KDA), Germany",
+          "graduated with an extended diploma in communication design (3 years), grade of 1.0 (honors)",
+          "Final thesis: accessible web – open up websites for the physically impaired, grade 1.0 (honors)"
+        ],
+        "icon": "http://",
+        "alt": "O"
+      },
+      {
+        "title": "digital publishing",
+        "info": "2015 • SummerSchool South Africa",
+        "description": [
+          "3 month SummerSchool at <a href=\"http://friendsofdesign.net/\" class=\"metalink\">Friends of Design</a>",
+          "located in Cape Town, South Africa",
+          "Digital Publishing course",
+          "iPad app, animated PDF, packaging redesign, branding for a pop-band"
+        ],
+        "icon": "X",
+        "alt": "O"
+      },
+      {
+        "title": "theology & philosophy",
+        "info": "2010 - 2013 • studies",
+        "description": [
+          "at <a href=\"https://www.uni-bonn.de/\" class=\"metalink\">Rheinische Friedrich-Wilhelms-Universität Bonn</a>, Germany",
+          "kickstarted my writing and storytelling skills",
+          "gathered deep knowledge in phylosophical thinking and theories",
+          "learned a lot about people, human history and behavious. Also, learned the dreams and believes of different cultures",
+          "Learned ancient hebrew, ancient greek and latin. The roots of modern language",
+          "I didn’t finish this B.A. and changed into the field of communication design, simply because I realized that theology and philosophy wasn’t what I wanted to do for a living"
+        ],
+        "icon": "X",
+        "alt": "O"
+      },
+      {
+        "title": "stage design",
+        "info": "2010 • internship",
+        "description": [
+          "at <a href=\"http://www.ndf.de/\" class=\"metalink\">ndF Filmgesellschaft</a> in Ellmau, Austria. Popular German TV show: <a href=\"http://www.zdf.de/der-bergdoktor/der-bergdoktor-5988550.html\" class=\"metalink\">Der Bergdoktor ZDF</a>",
+          "learned to quickly get my bearings and settle into new environments",
+          "learned how to design a stage and how to tell compelling stories",
+          "Gathered insights of the creative industry and first professional graphic design works"
+        ],
+        "icon": "X",
+        "alt": "O"
+      },
+      {
+        "title": "film technology",
+        "info": "2009 • internship at filmschool cologne",
+        "icon": "X",
+        "alt": "O"
+      },
+      {
+        "title": "high school diploma",
+        "info": "2003 - 2009 • Focus: sociology & psychology",
+        "icon": "X",
+        "alt": "O"
+      }
+    ],
+    "employment": [
+      {
+        "title": "edenspiekermann_",
+        "info": "2016 • Digital Design",
+        "description": [
+          "Working as an intern in Digital Design for <a href=\"http://www.edenspiekermann.com/\" class=\"metalink\">Edenspiekermann_ Berlin</a> on a relaunch project of an online book community",
+          "Assisting with extensive quantitative and qualitative user researches during the project to validate usability",
+          "Design and development of the sign-up process and onboarding flow for new users"
+        ],
+        "icon": "http://",
+        "alt": "O"
+      },
+      {
+        "title": "agentur-rubbeldiekatz",
+        "info": "2013 – today • design lead",
+        "description": [
+          "work as designer and developper for <a href=\"http://agentur-rubbeldiekatz.de/\" class=\"metalink\">agentur-rubbeldiekatz</a> Bonn, Germany",
+          "redesign of 2 websites: <a href=\"http://outdoorgym.de/\" class=\"metalink\">outdoorgym</a> & <a href=\"http://apt-service.de/\" class=\"metalink\">apt</a>",
+          "3D Prototyping for <a href=\"http://outdoorgym.de/\" class=\"metalink\">outdoorgym</a>, <a href=\"http://apt-service.de/\" class=\"metalink\">apt</a>",
+          "led over a dozen creative marketing campaigns, corporate identity designs and the brandingn of almost all clients"
+        ],
+        "icon": "X",
+        "alt": "O"
+      },
+      {
+        "title": "movie industry",
+        "info": "2009 - 2013 • 6 different jobs",
+        "description": [
+          "Set-Runner for 2Pilots for WDR.Movie: 'Es ist alles in Ordnung' (4,8 Million TV-Viewer). Directed by: Nicole Weegmann. Camera: Ngo The Chau",
+          "Assistant unit manager for Hives. Directed by: Simon Dolensky",
+          "Driver for Ratten. Directed by: Viktoria Gurtovaj",
+          "Making of for Aufstrich (289 KM). Directed by: Charlotte Marie Rolfes",
+          "Driver & making of for 21kHz (300 Mal). Directed by: Alexandra Brodski",
+          "Sound assistant for Gypsie. Directed by: Raluca-Maria Rusu"
+        ],
+        "icon": "X",
+        "alt": "O"
+      },
+      {
+        "title": "subway germany",
+        "info": "2012 – 2013 • supervisor",
+        "icon": "X",
+        "alt": "O"
+      },
+      {
+        "title": "holiday camp hotti ev.",
+        "info": "2012 • honorary supervisor",
+        "icon": "X",
+        "alt": "O"
+      }
+    ]
   }
 }

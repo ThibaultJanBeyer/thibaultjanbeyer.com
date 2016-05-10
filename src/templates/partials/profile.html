@@ -5,6 +5,7 @@
     Profile
     <img src="assets/img/zigzag.png" class="works__zigzag" alt="-">
   </h2>
+
   <div class="profile-story">
     <div class="profile-story__left">
       <p class="profile-story__text copy">
@@ -18,5 +19,55 @@
       </div>
     </div>
   </div>
-  
+
+  <div class="profile-timeline">
+    {% for type, placements in allPlacements %}
+    
+    <div class="profile-timeline__container">
+      <h3 class="profile-timeline__title copy">{{ type }}</h3>
+
+      {% for placement in placements %}
+      {% if placement.description %}
+      <button class="profile-timeline-placement button toggle--button">
+      {% else %}
+      <div class="profile-timeline-placement">
+      {% endif %}
+        <img src="{{ placement.icon }}" alt="{{ placement.alt }}" class="profile-timeline-placement__icon">
+        <h4 class="profile-timeline-placement__title copy">
+          {{ placement.title }}
+        </h4>
+        <span class="profile-timeline-placement__info copy">
+          {{ placement.info }}
+        </span>
+      {% if not placement.description %}
+      </div>
+      {% else %}
+      </button>
+      <ul class="profile-timeline-placement__list toggle toggle--close">
+        {% for points in placement.description %}
+          <li class="profile-timeline-placement__item copy">{{ points | safe }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      
+      {% endfor %}
+      
+    </div>
+    
+    {% if loop.first %}
+      <img src="assets/img/zigzag_horizontal.png" alt="|" class="profile-timeline__separator">
+    {% endif %}
+    
+    {% endfor %}
+  </div>
+
+  <div class="profile-skills copy">
+    <h3 class="profile-skills__title">Skills</h3>
+    <p class="profile-skills__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, nemo amet. Sed voluptate, consectetur deleniti!</p>
+    <h4 class="profile-skills__subtitle">Languages</h4>
+    <p class="profile-skills__text">Fluent: German, French, English CAE C1 level</p>
+    <p class="profile-skills__text">Learning: Japanese</p>
+    <p class="profile-skills__text">Too long ago: Latin, Dutch Hebrew, Greek</p>
+  </div>
+
 </section>

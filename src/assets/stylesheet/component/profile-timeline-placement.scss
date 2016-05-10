@@ -1,0 +1,40 @@
+.profile-timeline-placement {
+  margin: 40px 0 0;
+}
+
+.profile-timeline-placement__title {
+  @include font-size-responsive($delta);
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+}
+
+.profile-timeline-placement__info {
+  @include font-size-responsive($delta);
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+}
+
+.profile-timeline-placement__list {
+  list-style: outside;
+  max-width: 200px;
+  padding-left: 15px;
+  text-align: left;
+
+  @include media('>medium') {  
+    max-width: 300px;
+    padding-left: 25px;
+  }
+
+  @include media('>xlarge') {  
+    max-width: 400px;
+    padding-left: 35px;
+  }
+}
+
+.profile-timeline-placement__item {
+  @include font-size-responsive($delta);
+  color: $grey; 
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  margin: 10px 0;
+}

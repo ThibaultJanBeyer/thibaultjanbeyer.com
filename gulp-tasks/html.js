@@ -16,6 +16,7 @@ var getJsonData = function() {
 };
 
 module.exports = function () {
+  console.log('~~~~~~~~~~~ Flawless :-) ~~~~~~~~~');
   return gulp.src(htmlSrc)
     .pipe(plumber({
       errorHandler: function (err) {

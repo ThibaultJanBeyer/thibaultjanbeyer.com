@@ -1,0 +1,56 @@
+.profile-timeline {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+
+  @include media('>small') {
+    margin-top: 275px;
+  }
+
+  @include media('>medium') {
+    margin-top: 300px;
+  }
+
+  @include media('>large') {
+    margin-top: 350px;
+  }
+
+  @include media('>xlarge') {
+    margin-top: 400px;
+  }
+}
+
+.profile-timeline__title {
+  @include heading-gamma;
+  text-align: center;
+}
+
+.profile-timeline__separator {
+  align-self: center;
+  height: 600px;
+  margin: 80px 5px 0;
+
+  @include media('>medium') {
+    margin: 70px 40px 0 35px;
+  }
+
+  @include media('>large') {
+    margin: 70px 100px 0 80px;
+  }
+
+  @include media('>xlarge') {
+    margin: 70px 180px 0 170px;
+  }
+}
+
+.profile-timeline__container {
+  text-align: center;
+
+  &:first-child {
+    margin-left: 25px;
+
+    @include media('>medium') {
+      margin-left: 0px;
+    }
+  }
+}

@@ -6,8 +6,11 @@
 
 // Plugin
 @import 'plugin/includemedia';
+@import 'plugin/lazy-load';
 @import 'plugin/metalink';
 @import 'plugin/reset';
+@import 'plugin/scroll';
+@import 'plugin/toggle';
 
 // Mixin
 @import 'mixin/font-size-responsive';
@@ -21,12 +24,13 @@
 @import 'base/button';
 
 // Component
-@import 'component/lazy-load';
 @import 'component/more-works';
 @import 'component/more-works-work';
 @import 'component/profile';
+@import 'component/profile-skills';
 @import 'component/profile-story';
-@import 'component/scroll';
+@import 'component/profile-timeline';
+@import 'component/profile-timeline-placement';
 @import 'component/welcome';
 @import 'component/welcome-info';
 @import 'component/welcome-person';
