@@ -21,11 +21,10 @@
   </div>
 
   <div class="profile-timeline">
-    
     {% for type, placements in allPlacements %}
     
     <div class="profile-timeline__container">
-      <h3 class="profile-timeline__title">{{ type }}</h3>
+      <h3 class="profile-timeline__title copy">{{ type }}</h3>
 
       {% for placement in placements %}
       {% if placement.description %}
@@ -34,10 +33,10 @@
       <div class="profile-timeline-placement">
       {% endif %}
         <img src="{{ placement.icon }}" alt="{{ placement.alt }}" class="profile-timeline-placement__icon">
-        <h4 class="profile-timeline-placement__title">
+        <h4 class="profile-timeline-placement__title copy">
           {{ placement.title }}
         </h4>
-        <span class="profile-timeline-placement__info">
+        <span class="profile-timeline-placement__info copy">
           {{ placement.info }}
         </span>
       {% if not placement.description %}
@@ -46,7 +45,7 @@
       </button>
       <ul class="profile-timeline-placement__list toggle toggle--close">
         {% for points in placement.description %}
-          <li class="profile-timeline-placement__item">{{ points }}</li>
+          <li class="profile-timeline-placement__item copy">{{ points | safe }}</li>
         {% endfor %}
       </ul>
       {% endif %}
@@ -60,7 +59,15 @@
     {% endif %}
     
     {% endfor %}
-    
+  </div>
+
+  <div class="profile-skills copy">
+    <h3 class="profile-skills__title">Skills</h3>
+    <p class="profile-skills__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, nemo amet. Sed voluptate, consectetur deleniti!</p>
+    <h4 class="profile-skills__subtitle">Languages</h4>
+    <p class="profile-skills__text">Fluent: German, French, English CAE C1 level</p>
+    <p class="profile-skills__text">Learning: Japanese</p>
+    <p class="profile-skills__text">Too long ago: Latin, Dutch Hebrew, Greek</p>
   </div>
 
 </section>

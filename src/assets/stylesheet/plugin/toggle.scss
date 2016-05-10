@@ -3,7 +3,7 @@
  */
 .toggle {
   overflow: hidden;
-  transition: max-height 0.8s ease-out;
+  transition: max-height 0.6s ease-out;
 }
 
 .toggle--close {
@@ -11,7 +11,11 @@
 }
 
 .toggle--open {
-  max-height: 1000px;
+  max-height: 600px;
+
+  @include media('>large') {  
+    max-height: 300px;
+  }
 }
 
 .toggle--button {
@@ -22,7 +26,6 @@
  * 1. to get a square
  */
 .toggle--button::after {
-  //background-color: $primary;
   border: 1px solid $primary;
   content: '+';
   margin-left: 5px;

@@ -31,9 +31,5 @@
 }
 
 .more-works-work__title {
-  @include font-size-responsive;
-  font-family: 'Fira Sans', sans-serif;
-  font-style: italic;
-  font-weight: 500;
-  color: $off-black;
+  @include heading-gamma;
 }
