@@ -11,6 +11,7 @@ var scssSrc = './src/assets/stylesheet/bundle.scss',
     scssDst = './dist/assets/stylesheet/';
 
 module.exports = function () {
+  console.log('~~~~~~~~~~~ I luv your sass, Master :-) ~~~~~~~~~');
   return gulp.src(scssSrc)
     .pipe(plumber({
       errorHandler: function (err) {
