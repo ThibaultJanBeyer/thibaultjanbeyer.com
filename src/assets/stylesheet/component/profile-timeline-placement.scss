@@ -1,0 +1,30 @@
+.profile-timeline-placement {
+  margin: 40px 0 0;
+}
+
+.profile-timeline-placement__title {
+  @include font-size-responsive($delta);
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+}
+
+.profile-timeline-placement__info {
+  @include font-size-responsive($delta);
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+}
+
+.profile-timeline-placement__list {
+  list-style: outside;
+  padding-left: 15px;
+  max-width: 200px;
+  text-align: left;
+}
+
+.profile-timeline-placement__item {
+  @include font-size-responsive($delta);
+  font-family: 'Fira Sans', sans-serif;
+  color: $grey; 
+  font-weight: 300;
+  margin: 10px 0;
+}

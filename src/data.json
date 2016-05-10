@@ -403,5 +403,42 @@
         "alt": "version 1 of my personal portfolio in french and red, black green and blue, using flash and framed layout"
       }
     ]
+  },
+  "allPlacements": {
+    "education": [
+      {
+        "title": "Edenspiekermann_",
+        "info": "2016 • design & development",
+        "description": [
+          "Worked as an intern in Digital Design on a relaunch project of an online book community",
+          "Assisting with an extensive quantitative user research of over 2400 users as well as qualitative research during the project, to validate the usability of our solutions",
+          "Design and development of the sign-up process for new users",
+          "Design and development of onboarding flow for new users"
+        ],
+        "icon": "X",
+        "alt": "O"
+      },
+      {
+        "title": "design & development",
+        "info": "2016 • lorem ipsum",
+        "icon": "X",
+        "alt": "O"
+      }
+    ],
+    "eployment": [
+      {
+        "title": "agentur-rubbeldiekatz",
+        "info": "2013 – today • designer",
+        "description": ["lrem ipsum dolor sit amet"],
+        "icon": "X",
+        "alt": "O"
+      },
+      {
+        "title": "Intern: Design & Development",
+        "info": "2016 • lorem ipsum",
+        "icon": "X",
+        "alt": "O"
+      }
+    ]
   }
 }

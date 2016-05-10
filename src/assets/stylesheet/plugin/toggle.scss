@@ -1,0 +1,35 @@
+/*
+ * Toggle content. impossible to transition height from value to auto, so workaround with max height
+ */
+.toggle {
+  overflow: hidden;
+  transition: max-height 0.8s ease-out;
+}
+
+.toggle--close {
+  max-height: 0;
+}
+
+.toggle--open {
+  max-height: 1000px;
+}
+
+.toggle--button {
+  text-align: center;
+}
+
+/*
+ * 1. to get a square
+ */
+.toggle--button::after {
+  //background-color: $primary;
+  border: 1px solid $primary;
+  content: '+';
+  margin-left: 5px;
+  padding: 0 4px; /* 1. */
+  color: $blue2;
+}
+
+.toggle--button-close::after {
+  content: '-';
+}
