@@ -1,5 +1,21 @@
 .profile-skills {
   margin: 100px auto;
-  max-width: 400px;
+  max-width: 650px;
   text-align: center;
+}
+
+.profile-skills__title {
+  @include heading-gamma;
+  margin-bottom: 20px;
+}
+
+.profile-skills__text {
+  @include font-size-responsive;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+}
+
+.profile-skills__subtitle {
+  @include heading-gamma;
+  margin: 50px 0 20px;
 }
