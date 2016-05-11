@@ -19,3 +19,14 @@
   @include heading-gamma;
   margin: 50px 0 20px;
 }
+
+.profile-skills__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @include media('>medium') {
+    flex-direction: row;
+  }
+}

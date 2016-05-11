@@ -6,78 +6,8 @@
     <img src="assets/img/zigzag.png" class="works__zigzag" alt="-">
   </h2>
 
-  <div class="profile-story">
-    <div class="profile-story__left">
-      <p class="profile-story__text copy">
-        The eagerness to learn and to produce the best user experience is the principle that guides my work
-      </p>
-    </div>
-    <div class="profile-story__right">
-      <div class="profile-story__img-container">
-        <img src="assets/img/thibault-jan-beyer-painting.jpg" class="profile-story__img scroll scroll--permanent"
-        data-scroll--speed="90" alt="Five year old brothers painting everywhere, even on the walls">
-      </div>
-    </div>
-  </div>
-
-  <div class="profile-timeline">
-    {% for type, placements in allPlacements %}
-    
-    <div class="profile-timeline__container">
-      <h3 class="profile-timeline__title copy">{{ type }}</h3>
-
-      {% for placement in placements %}
-      <div class="toggle--scope">
-        {% if placement.description %}
-        <button class="profile-timeline-placement button toggle--button" type="button">
-        {% else %}
-        <div class="profile-timeline-placement">
-        {% endif %}
-          <img src="{{ placement.icon }}" alt="{{ placement.alt }}" class="profile-timeline-placement__icon">
-          <h4 class="profile-timeline-placement__title copy">
-            {{ placement.title }}
-          </h4>
-          <span class="profile-timeline-placement__info copy">
-            {{ placement.info }}
-          </span>
-        {% if not placement.description %}
-        </div>
-        {% else %}
-        </button>
-        <ul class="profile-timeline-placement__list toggle toggle--close">
-          {% for points in placement.description %}
-          <li class="profile-timeline-placement__item copy">{{ points | safe }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </div>
-      {% endfor %}
-      
-    </div>
-    
-    {% if loop.first %}
-    <img src="assets/img/zigzag_horizontal.png" alt="|" class="profile-timeline__separator">
-    {% endif %}
-    
-    {% endfor %}
-  </div>
-
-  <div class="profile-skills copy toggle--scope">
-    <h3 class="profile-skills__title">
-      Skills
-    </h3>
-    <p class="profile-skills__text">
-      Beside being creative and able to design & develop anything you need, the most important thing I learned over the years is to learn how to learn. That is my major skill and the one I improve every day by being genuinely interested in challenges. It eintails beeing able to learn what ever is of use to solve your problem within an extremely short amount of time. That is why, I am confident to tackle anything, as long as I have fun doing it. However, I’ve put up <button class="button metalink toggle--button" type="button">a list of things I can do</button> if that answer is not satisfying enough
-    </p>
-    <ul class="profile-skills__list toggle toggle--close">
-      {% for skill in skills %}
-      <li class="profile-skills__item copy">{{ skill }}</li>
-      {% endfor %}
-    </ul>
-    <h4 class="profile-skills__subtitle">Languages</h4>
-    <p class="profile-skills__text">Fluent: German, French, English CAE C1 level</p>
-    <p class="profile-skills__text">Learning: Japanese</p>
-    <p class="profile-skills__text">Too long ago: Latin, Dutch Hebrew, Greek</p>
-  </div>
+  {% include "partials/profile-story.html" %}
+  {% include "partials/profile-timeline.html" %}
+  {% include "partials/profile-skills.html" %}
 
 </section>

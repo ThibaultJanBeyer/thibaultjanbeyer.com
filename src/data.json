@@ -520,23 +520,43 @@
       }
     ]
   },
-  "skills": [
-    "Creativity",
-    "HTML & CSS",
-    "JavaScript",
-    "PHP & CMS",
-    "Illustrator",
-    "Photoshop",
-    "InDesign",
-    "Cinema 4D",
-    "Image Art",
-    "Video Art",
-    "Photo Art",
-    "Illustration",
-    "Premiere Pro",
-    "After Effects",
-    "Ableton Live",
-    "conception",
-    "No coffee"
-  ]
+  "skills": {
+    "overall": [
+      "creativity&nbsp;•••",
+      "conception&nbsp;•••",
+      "flexibility&nbsp;•••",
+      "soft-skills&nbsp;•••",
+      "no coffee"
+    ],
+    "development": [
+      "html & css&nbsp;•••",
+      "jquery&nbsp;•••",
+      "plugins & cms&nbsp;•••",
+      "git, gulp&nbsp;••",
+      "javascript&nbsp;••",
+      "angular&nbsp;••",
+      "nunjuck&nbsp;••",
+      "ruby & rails&nbsp;•",
+      "php, python&nbsp;•",
+      "node&nbsp;•"
+    ],
+    "design": [
+      "sketch, ai, id, ps, fl&nbsp;•••",
+      "image, photo, video&nbsp;•••",
+      "3d (cinema 4d)&nbsp;••",
+      "pr, ae, an&nbsp;••",
+      "cd & ci&nbsp;••",
+      "packaging&nbsp;••",
+      "editorial&nbsp;••",
+      "finishing&nbsp;••",
+      "ableton live&nbsp;•"
+    ],
+    "marketing": [
+      "seo&nbsp;••",
+      "branding&nbsp;••",
+      "consulting&nbsp;•",
+      "presenting&nbsp;•",
+      "social media&nbsp;•"
+    ]
+  }
 }
