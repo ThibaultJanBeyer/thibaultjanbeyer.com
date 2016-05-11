@@ -5,16 +5,18 @@
 {% block content %}
 
   <main class="site-content" id="main" aria-label="Content">
+
     <!-- Welcome -->
-    {% include "partials/welcome.html" %}
+    {% include "partials/welcome/welcome.html" %}
     <!-- Works -->
-    {% include "partials/works.html" %}
+    {% include "partials/works/works.html" %}
     <!-- Profile -->
-    {% include "partials/profile.html" %}
-    {% include "partials/contact.html" %}
+    {% include "partials/profile/profile.html" %}
+    {% include "partials/contact/contact.html" %}
     {% include "partials/footer.html" %}
+
   </main>
 
-  {% include "partials/more-works.html" %}
+  {% include "partials/works/more-works.html" %}
 
 {% endblock %}

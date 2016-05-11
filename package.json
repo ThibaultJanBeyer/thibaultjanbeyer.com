@@ -10,7 +10,6 @@
     "babel-preset-es2015": "*",
     "gulp-autoprefixer": "*",
     "gulp-babel": "*",
-    "gulp-changed": "*",
     "gulp-clean": "*",
     "gulp-concat": "*",
     "gulp-csso": "*",

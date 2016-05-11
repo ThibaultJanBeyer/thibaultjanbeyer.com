@@ -1,0 +1,41 @@
+<div class="profile-timeline">
+  {% for type, placements in allPlacements %}
+  
+  <div class="profile-timeline__container">
+    <h3 class="profile-timeline__title copy">{{ type }}</h3>
+
+    {% for placement in placements %}
+    <div class="toggle--scope">
+      {% if placement.description %}
+      <button class="profile-timeline-placement button toggle--button" type="button">
+      {% else %}
+      <div class="profile-timeline-placement">
+      {% endif %}
+        <img src="{{ placement.icon }}" alt="{{ placement.alt }}" class="profile-timeline-placement__icon">
+        <h4 class="profile-timeline-placement__title copy">
+          {{ placement.title }}
+        </h4>
+        <span class="profile-timeline-placement__info copy">
+          {{ placement.info }}
+        </span>
+      {% if not placement.description %}
+      </div>
+      {% else %}
+      </button>
+      <ul class="profile-timeline-placement__list toggle toggle--close">
+        {% for points in placement.description %}
+        <li class="profile-timeline-placement__item copy">{{ points | safe }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+    
+  </div>
+  
+  {% if loop.first %}
+  <img src="assets/img/zigzag_horizontal.png" alt="|" class="profile-timeline__separator">
+  {% endif %}
+  
+  {% endfor %}
+</div>

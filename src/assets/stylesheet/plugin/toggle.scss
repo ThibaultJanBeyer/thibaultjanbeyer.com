@@ -14,6 +14,10 @@
   max-height: 600px;
 
   @include media('>large') {  
+    max-height: 400px;
+  }
+
+  @include media('>xlarge') {  
     max-height: 300px;
   }
 }
