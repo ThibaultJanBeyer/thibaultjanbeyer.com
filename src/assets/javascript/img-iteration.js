@@ -100,7 +100,7 @@ myLoop({
         scrolledDown = false;
       }
     }
-  }, 1000);
+  }, 850);
 
 //end
 })();
