@@ -95,7 +95,7 @@
       node.classList.remove("more-works--start"); // pushes more-works to the left
       document.body.classList.add("more-works--locker"); // removes the scroll ability
       document.getElementsByTagName('html')[0].classList.add("more-works--locker"); // removes the scroll ability
-      worksOpen = true;
+      WORKS_OPEN = true;
       // TJB Modifications [end]
     }
 
@@ -116,7 +116,7 @@
       thibaultImgMain.classList.remove("more-works--hider"); // show weird img again
       document.body.classList.remove("more-works--locker"); // restores the scroll ability
       document.getElementsByTagName('html')[0].classList.remove("more-works--locker"); // restores the scroll ability
-      worksOpen = false;
+      WORKS_OPEN = false;
       }, 1000);
       // TJB Modifications [end]
     }

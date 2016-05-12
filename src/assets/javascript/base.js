@@ -1,8 +1,9 @@
 'use strict'; // jshint -W097
 /*
- * Globals
+ * Shared Globals
  */
-var worksOpen = false;
+var WORKS_OPEN = false; // checks if the more-works section is open
+var WINDOW_SCROLL_TOP; // stores the scroll value every scroll
 /*
  *
  * forEach method run like this:

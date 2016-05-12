@@ -20,6 +20,10 @@
     width: 55%;
   }
 
+  @include media('>large') {
+    height: 210%;
+  }
+
   @include media('>xlarge') {
     width: 70%;
   }
@@ -31,6 +35,10 @@
 
   @include media('>medium') {
     margin-top: 20%;
+  }
+
+  @include media('>medium') {
+    margin-top: 25%;
   }
 
   @include media('>xlarge') {
