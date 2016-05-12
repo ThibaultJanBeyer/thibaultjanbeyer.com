@@ -412,22 +412,24 @@
         "description": [
           "at Cologne Design Academy (KDA), Germany",
           "graduated with an extended diploma in communication design (3 years), grade of 1.0 (honors)",
-          "Final thesis: accessible web – open up websites for the physically impaired, grade 1.0 (honors)"
+          "final thesis: accessible web – open up websites for the physically impaired, grade 1.0 (honors)"
         ],
-        "icon": "http://",
-        "alt": "O"
+        "icon": "certificate",
+        "icon-title": "certificate",
+        "icon-description": "official paper with stamp and seal"
       },
       {
         "title": "digital publishing",
-        "info": "2015 • SummerSchool South Africa",
+        "info": "2015 • summerschool south africa",
         "description": [
           "3 month SummerSchool at <a href=\"http://friendsofdesign.net/\" class=\"metalink\">Friends of Design</a>",
           "located in Cape Town, South Africa",
           "Digital Publishing course",
           "iPad app, animated PDF, packaging redesign, branding for a pop-band"
         ],
-        "icon": "X",
-        "alt": "O"
+        "icon": "study-abroad",
+        "icon-title": "study abroad",
+        "icon-description": "world sphere with student cap"
       },
       {
         "title": "theology & philosophy",
@@ -440,45 +442,50 @@
           "Learned ancient hebrew, ancient greek and latin. The roots of modern language",
           "I didn’t finish this B.A. and changed into the field of communication design, simply because I realized that theology and philosophy wasn’t what I wanted to do for a living"
         ],
-        "icon": "X",
-        "alt": "O"
+        "icon": "certificate",
+        "icon-title": "certificate",
+        "icon-description": "official paper with stamp and seal"
       },
       {
-        "title": "stage design",
-        "info": "2010 • internship",
+        "title": "Der Bergdoktor ZDF",
+        "info": "2010 • training stage design",
         "description": [
-          "at <a href=\"http://www.ndf.de/\" class=\"metalink\">ndF Filmgesellschaft</a> in Ellmau, Austria. Popular German TV show: <a href=\"http://www.zdf.de/der-bergdoktor/der-bergdoktor-5988550.html\" class=\"metalink\">Der Bergdoktor ZDF</a>",
+          "6 month internship/training at <a href=\"http://www.ndf.de/\" class=\"metalink\">ndF Filmgesellschaft</a> in Ellmau, Austria. Popular German TV show: <a href=\"http://www.zdf.de/der-bergdoktor/der-bergdoktor-5988550.html\" class=\"metalink\">Der Bergdoktor ZDF</a>",
           "learned to quickly get my bearings and settle into new environments",
           "learned how to design a stage and how to tell compelling stories",
           "Gathered insights of the creative industry and first professional graphic design works"
         ],
-        "icon": "X",
-        "alt": "O"
+        "icon": "backpack",
+        "icon-title": "packpack",
+        "icon-description": "a big hipster backpack with a front pocket and side pockets"
       },
       {
-        "title": "film technology",
-        "info": "2009 • internship at filmschool cologne",
-        "icon": "X",
-        "alt": "O"
-      },
-      {
-        "title": "high school diploma",
+        "title": "high school diploma (A Levels)",
         "info": "2003 - 2009 • Focus: sociology & psychology",
-        "icon": "X",
-        "alt": "O"
+        "icon": "certificate",
+        "icon-title": "certificate",
+        "icon-description": "official paper with stamp and seal"
+      },
+      {
+        "title": "primary school",
+        "info": "1994 - 2003",
+        "icon": "school-book",
+        "icon-title": "school book",
+        "icon-description": "book with text and an arrow pointing up hovering the book"
       }
     ],
     "employment": [
       {
         "title": "edenspiekermann_",
-        "info": "2016 • Digital Design",
+        "info": "2016 • intern digital design",
         "description": [
-          "Working as an intern in Digital Design for <a href=\"http://www.edenspiekermann.com/\" class=\"metalink\">Edenspiekermann_ Berlin</a> on a relaunch project of an online book community",
+          "3 momth work as an intern in Digital Design for <a href=\"http://www.edenspiekermann.com/\" class=\"metalink\">Edenspiekermann_ Berlin</a> on a relaunch project of an online book community",
           "Assisting with extensive quantitative and qualitative user researches during the project to validate usability",
           "Design and development of the sign-up process and onboarding flow for new users"
         ],
-        "icon": "http://",
-        "alt": "O"
+        "icon": "digital-employed",
+        "icon-title": "digital worker",
+        "icon-description": "worker with safety helmet and braces holding a laptop"
       },
       {
         "title": "agentur-rubbeldiekatz",
@@ -489,8 +496,9 @@
           "3D Prototyping for <a href=\"http://outdoorgym.de/\" class=\"metalink\">outdoorgym</a>, <a href=\"http://apt-service.de/\" class=\"metalink\">apt</a>",
           "led over a dozen creative marketing campaigns, corporate identity designs and the brandingn of almost all clients"
         ],
-        "icon": "X",
-        "alt": "O"
+        "icon": "digital-employed",
+        "icon-title": "digital worker",
+        "icon-description": "worker with safety helmet and braces holding a laptop"
       },
       {
         "title": "movie industry",
@@ -503,20 +511,30 @@
           "Driver & making of for 21kHz (300 Mal). Directed by: Alexandra Brodski",
           "Sound assistant for Gypsie. Directed by: Raluca-Maria Rusu"
         ],
-        "icon": "X",
-        "alt": "O"
+        "icon": "film-employed",
+        "icon-title": "film worker",
+        "icon-description": "worker with safety helmet and braces holding a movie camera"
+      },
+      {
+        "title": "international filmschool cologne",
+        "info": "2009 • film technology",
+        "icon": "film-employed",
+        "icon-title": "film worker",
+        "icon-description": "worker with safety helmet and braces holding a movie camera"
       },
       {
         "title": "subway germany",
         "info": "2012 – 2013 • supervisor",
-        "icon": "X",
-        "alt": "O"
+        "icon": "supervisor",
+        "icon-title": "professional supervisor",
+        "icon-description": "worker with safety helmet, braces holding a checklist"
       },
       {
         "title": "holiday camp hotti ev.",
         "info": "2012 • honorary supervisor",
-        "icon": "X",
-        "alt": "O"
+        "icon": "supervisor-eyes",
+        "icon-title": "supervisor",
+        "icon-description": "worker with safety helmet, braces and eyeglasses"
       }
     ]
   },
@@ -543,9 +561,10 @@
     "design": [
       "sketch, ai, id, ps, fl&nbsp;•••",
       "image, photo, video&nbsp;•••",
+      "icons, logos, illus •••",
       "3d (cinema 4d)&nbsp;••",
       "pr, ae, an&nbsp;••",
-      "cd & ci&nbsp;••",
+      "cds & cis&nbsp;••",
       "packaging&nbsp;••",
       "editorial&nbsp;••",
       "finishing&nbsp;••",

@@ -2,6 +2,11 @@
   margin: 40px 0 0;
 }
 
+.profile-timeline-placement__svg {
+  height: 40px;
+  width: 50px;
+}
+
 .profile-timeline-placement__title {
   @include font-size-responsive($delta);
   font-family: 'Fira Sans', sans-serif;

@@ -27,30 +27,23 @@
 
 .profile-timeline__separator {
   align-self: center;
+  filter: drop-shadow(1px 1px 0.5px rgba(0, 0, 0, 0.25));
   height: 600px;
-  margin: 80px 5px 0;
+  width: 40px;
 
   @include media('>medium') {
-    margin: 70px 40px 0 35px;
+    width: 150px;
   }
 
   @include media('>large') {
-    margin: 70px 100px 0 80px;
+    width: 300px;
   }
 
   @include media('>xlarge') {
-    margin: 70px 180px 0 170px;
+    width: 400px;
   }
 }
 
 .profile-timeline__container {
   text-align: center;
-
-  &:first-child {
-    margin-left: 25px;
-
-    @include media('>medium') {
-      margin-left: 0px;
-    }
-  }
 }

@@ -11,7 +11,11 @@
       {% else %}
       <div class="profile-timeline-placement">
       {% endif %}
-        <img src="{{ placement.icon }}" alt="{{ placement.alt }}" class="profile-timeline-placement__icon">
+        <svg xmlns=http://www.w3.org/2000/svg role="img" class="profile-timeline-placement__svg" aria-labelledby="title  desc">
+          <title id="title">{{ placement.icon-title }}</title>
+          <desc id="desc">{{ placement.icon-description }}</desc>
+          <use role="presentation" xlink:href="assets/svg/sprite.svg#{{ placement.icon }}"></use>
+        </svg>
         <h4 class="profile-timeline-placement__title copy">
           {{ placement.title }}
         </h4>
@@ -34,7 +38,11 @@
   </div>
   
   {% if loop.first %}
-  <img src="assets/img/zigzag_horizontal.png" alt="|" class="profile-timeline__separator">
+  <svg xmlns=http://www.w3.org/2000/svg role="img" class="profile-timeline__separator" aria-labelledby="title  desc">
+    <title id="title">separation line</title>
+    <desc id="desc">a vertical line in zigzag shape separating the content</desc>
+    <use role="presentation" xlink:href="assets/svg/sprite.svg#zigzag-vertical"></use>
+  </svg>
   {% endif %}
   
   {% endfor %}
