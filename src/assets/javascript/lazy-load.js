@@ -39,7 +39,7 @@
 
 	setInterval(function() {
 		// check every 1 second if more-works is open
-		if ( worksOpen === true ) {
+		if ( WORKS_OPEN === true ) {
 			forEach(lazyElements, function (index, element) {
 				// stores the position values of the current element
 				var rect = element.getBoundingClientRect();
