@@ -1,0 +1,55 @@
+/* * * * * * *
+ * QUESTIONS *
+ * * * * * * */
+
+/*
+ * 1. bezier for bounce animation
+ */
+.writer-question--close {
+  transform: scale(0, 0);
+  transition: transform 0.6s cubic-bezier(0.87, -0.41, 0.19, 1.44); /* 1. */
+  will-change: transform;
+}
+
+/*
+ * speech bubble should pop up
+ */
+.writer-question--open {
+  transform: scale(1, 1);
+}
+
+/*
+ * yes, display: none – hidden for everyone
+ */
+.writer-question--hidden {
+  display: none;
+}
+
+
+/* * * * * *
+ * ANSWERS *
+ * * * * * */
+
+.writer-answer {
+  overflow: hidden;
+  max-width: 0;
+  transition: max-width 1s linear;
+}
+ 
+.writer-answer--open {
+  max-width: 100%;
+}
+
+/*
+ * still visible for screen readers (and hardcore writers)
+ */
+.writer-answer--hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

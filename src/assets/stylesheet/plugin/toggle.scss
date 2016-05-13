@@ -31,10 +31,18 @@
  */
 .toggle--button::after {
   border: 1px solid $primary;
+  color: $blue2;
   content: '+';
   margin-left: 5px;
   padding: 0 4px; /* 1. */
-  color: $blue2;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.toggle--button:hover::after,
+.toggle--button:active::after,
+.toggle--button:focus::after {
+  background-color: $primary;
+  color: $white;
 }
 
 .toggle--button-close::after {

@@ -1,0 +1,42 @@
+.contact-input {
+  width: 100%;
+}
+
+.contact-input__form {
+  margin: 20px;
+  padding: 20px;
+
+  @include media('>small') {
+    margin-left: 10%;
+  }
+}
+
+.contact-input__label {
+  @include font-size-responsive;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+}
+
+.contact-input__input {
+  @include font-size-responsive;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  background-color: $white;
+  border: 0;
+  border-bottom: 1px dashed $grey;
+}
+
+.contact-input__next {
+  border: 1px solid $primary;
+  color: $blue2;
+  margin-left: 5px;
+  padding: 0 4px;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.contact-input__next:hover,
+.contact-input__next:active,
+.contact-input__next:focus {
+  background-color: $primary;
+  color: $white;
+}
