@@ -11,6 +11,7 @@
 @import 'plugin/reset';
 @import 'plugin/scroll';
 @import 'plugin/toggle';
+@import 'plugin/writer';
 
 // Mixin
 @import 'mixin/font-size-responsive';
@@ -24,6 +25,9 @@
 @import 'base/button';
 
 // Component
+@import 'component/contact';
+@import 'component/contact-input';
+@import 'component/contact-pic';
 @import 'component/more-works';
 @import 'component/more-works-work';
 @import 'component/profile';

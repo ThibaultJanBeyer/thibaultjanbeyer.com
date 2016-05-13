@@ -1,27 +1,28 @@
 <div class="contact-input">
-  <form action="senden.html" id="contactForm">
+  <form action="senden.html" id="contactForm" class="contact-input__form">
     <label class="sr-only" form="contactForm">contact form:</label>
-    <span>
-      Hi thibault, 
-      <label for="myName">
-        my name is
+    <span class="writer writer-answer">
+      <label for="myName" class="contact-input__label copy">
+        Hi thibault, my name is
       </label> 
-      <input type="text" name="myName" id="myName">
+      <input type="text" name="myName" id="myName" class="contact-input__input">
+      <!-- yup a span button, users with disabilities should not care about this button -->
+      <span class="button contact-input__next writer--next"> > </span>
     </span>
-    <span>
-      I... 
-      <label for="myMessage">
-        <span class="sr-only">enter your message</span>
+    <span class="writer writer-answer writer-answer--hidden">
+      <label for="myMessage" class="contact-input__label copy">
+        I... <span class="sr-only">enter your message</span>
       </label>
-      <input type="text" name="myMessage" id="myMessage">
+      <textarea name="myMessage" id="myMessage" class="contact-input__input"></textarea>
+      <!-- yup a span button, users with disabilities should not care about this button -->
+      <span class="button writer--next"> > </span>
     </span>
-    <span>
-      Oh yes, sure. 
-      <label for="myMail">
-        My mail is
+    <span class="writer writer-answer writer-answer--hidden">
+      <label for="myMail" class="contact-input__label copy">
+        Oh yes, sure. My mail is 
       </label>
-      <input type="text" name="myMail" id="myMail">
-    </span>
+      <input type="text" name="myMail" id="myMail" class="contact-input__input">
     <button type="button">Here you go <span class="sr-only">(info: clicking this button will open your local email client with all the infos pre-written, you’ll just have to send it)</span></button>
+    </span>
   </form>
 </div>
