@@ -13,7 +13,7 @@
   <div class="works__container">
     {% for featuredWork in featuredWorks %}
     <div class="works-work works-work--{{ featuredWork.modifier }} scroll scroll--permanent"
-        data-scroll--speed="40">
+        data-scroll--speed="{{ 80 - (loop.index * 20) }} ">
       <a href="{{ featuredWork.url }}" target="_blank" class="works-work__container">
         <img src="{{ featuredWork.src }}" alt="{{ featuredWork.alt }}" class="works-work__image">
         <h3 class="works-work__title works-work__title--{{ featuredWork.modifier }} copy scroll scroll--permanent"

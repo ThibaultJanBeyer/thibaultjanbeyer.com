@@ -50,14 +50,14 @@
             // start second loop
             if (countdown === 0) {
               myLoop(
-                { countdown: writerQuestion[1].char.length - 1, duration: 70, countup: 0 },
+                { countdown: writerQuestion[1].char.length - 1, duration: 65, countup: 0 },
                 (countdown, duration, countup) => {
                   writerQuestion[1].el.innerHTML += writerQuestion[1].char[countup];
 
                   if (countdown === 0) {
                     // start the third loop
                     myLoop(
-                      { countdown: writerAnswer[0].char.length - 1, duration: 70, countup: 0 },
+                      { countdown: writerAnswer[0].char.length - 1, duration: 65, countup: 0 },
                       (countdown, duration, countup) => {
                         writerAnswer[0].el.innerHTML += writerAnswer[0].char[countup];
                       });
@@ -70,7 +70,7 @@
     } else if (step === 3) {
       writerQuestionHidden[0].classList.remove('writer-question--hidden');
       myLoop(
-        { countdown: writerQuestion[step].char.length - 1, duration: 70, countup: 0 },
+        { countdown: writerQuestion[step].char.length - 1, duration: 65, countup: 0 },
         (countdown, duration, countup) => {
           writerQuestion[step].el.innerHTML += writerQuestion[step].char[countup];
         });
@@ -80,14 +80,14 @@
       writerAnswerHidden[0].classList.remove('writer-answer--hidden');
 
       myLoop(
-        { countdown: writerQuestion[step].char.length - 1, duration: 70, countup: 0 },
+        { countdown: writerQuestion[step].char.length - 1, duration: 65, countup: 0 },
         (countdown, duration, countup) => {
           writerQuestion[step].el.innerHTML += writerQuestion[step].char[countup];
 
           if (countdown === 0) {
             // start the third loop
             myLoop(
-              { countdown: writerAnswer[step - 1].char.length - 1, duration: 70, countup: 0 },
+              { countdown: writerAnswer[step - 1].char.length - 1, duration: 65, countup: 0 },
               (countdown, duration, countup) => {
                 writerAnswer[step - 1].el.innerHTML += writerAnswer[step - 1].char[countup];
               });
