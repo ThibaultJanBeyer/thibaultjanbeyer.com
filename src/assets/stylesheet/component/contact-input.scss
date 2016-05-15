@@ -1,18 +1,16 @@
 .contact-input {
   width: 100%;
+  margin: auto;
+  max-width: 850px;
 }
 
 .contact-input__form {
-  margin: 25px 20px;
-  padding: 25px 30px;
+  margin: 0 auto;
+  padding: 50px;
+}
 
-  @include media('>small') {
-    margin-left: 10%;
-  }
-
-  @include media('>medium') {
-    margin-top: 50px;
-  }
+.contact-input__container {
+  margin-bottom: 20px;
 }
 
 .contact-input__label {
@@ -23,11 +21,16 @@
 
 .contact-input__input {
   @include font-size-responsive;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 500;
   background-color: $white;
   border: 0;
   border-bottom: 1px dashed $grey;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  height: 30px;
+  margin-left: 10px;
+  max-height: 175px;
+  width: 60%;
+  vertical-align: baseline;
 }
 
 .contact-input__next {
@@ -43,4 +46,8 @@
 .contact-input__next:focus {
   background-color: $primary;
   color: $white;
+}
+
+.contact-input__submit {
+  margin-left: 10px;
 }

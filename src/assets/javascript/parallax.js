@@ -38,13 +38,23 @@
           }
           
           // Animating Regular scrolls and lazyloads
-          if ( element.classList.contains("scroll--permanent") === true ) {
+          if(element.classList.contains("scroll--permanent")) {
             // pixel position of window scroll (i.e. 500) - already passed pixels until object was seen (i.e. 50) / speed
             scrolling[index] = ((WINDOW_SCROLL_TOP - passedScroll[index]) / dataSpeed) * -1;
             element.style.transform = "translate3D(0, " + scrolling[index] + "%, 0)";
+          } else if(element.classList.contains("scroll--writer") && !element.classList.contains("scroll--writer-start")) {
+            element.classList.add('scroll--writer-start');
+            WRITER_OPEN = true;
           }
+        } else if(element.classList.contains("scroll--writer") && element.classList.contains("scroll--writer-start")) {
+          element.classList.remove('scroll--writer-start');
+          WRITER_OPEN = false;
         }
       });
+      
+      if (WINDOW_SCROLL_TOP) {
+        
+      }
 
     }
   }, 20);
