@@ -1,3 +1,7 @@
+.contact {
+  margin-top: 200px;
+}
+
 .contact__container {
   align-content: flex-start;
   display: flex;
@@ -9,5 +13,9 @@
 .contact__title {
   @include heading-teaser;
   position: absolute;
-  margin: -100px 0 0 25px;
+  margin: -120px 0 0 25px;
+
+  @include media('>medium') {
+    margin: -80px 0 0 25px;
+  }
 }
