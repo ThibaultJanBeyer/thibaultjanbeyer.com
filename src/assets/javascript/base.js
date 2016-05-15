@@ -3,6 +3,7 @@
  * Shared Globals
  */
 var WORKS_OPEN = false; // checks if the more-works section is open
+var WRITER_OPEN = false; // checks if the writer function is ready to trigger
 var WINDOW_SCROLL_TOP; // stores the scroll value every scroll
 /*
  *
