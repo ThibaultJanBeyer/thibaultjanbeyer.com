@@ -1,0 +1,41 @@
+.external-link {
+  height: 15px;
+  width: 15px;
+}
+
+/*
+ * 1. get the svg at the img corner position
+ */
+.external-link--img {
+  position: absolute;
+  margin: -7px; /* 1. */
+}
+
+.external-link--text {
+  position: absolute;
+  margin: 10px 5px;
+}
+
+.internal-link {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  margin: 10px 0;
+}
+
+/*
+ * 1. get svg inline with text
+ */
+.internal-right-link {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  margin: 7px; /* 1. */
+}
+
+.download-link {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  margin: 10px 5px;
+}

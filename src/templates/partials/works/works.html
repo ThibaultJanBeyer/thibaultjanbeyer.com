@@ -16,6 +16,11 @@
         data-scroll--speed="{{ 80 - (loop.index * 20) }} ">
       <a href="{{ featuredWork.url }}" target="_blank" class="works-work__container">
         <img src="{{ featuredWork.src }}" alt="{{ featuredWork.alt }}" class="works-work__image">
+        <svg xmlns="http://www.w3.org/2000/svg" role="img" class="external-link external-link--img" aria-labelledby="title  desc">
+          <title id="title">external link (new window)</title>
+          <desc id="desc">square with arrow pointing outside</desc>
+          <use role="presentation" xlink:href="assets/svg/sprite.svg#external-link"></use>
+        </svg>
         <h3 class="works-work__title works-work__title--{{ featuredWork.modifier }} copy scroll scroll--permanent"
         data-scroll--speed="10">
           {{ featuredWork.title }}
@@ -26,7 +31,11 @@
   </div>
 
   <button class="button button--large metalink copy" type="button" data-a11y-dialog-show="more-works">
-    see more works
-  </button>
+    see more works<!--
+ --><svg xmlns="http://www.w3.org/2000/svg" role="img" class="internal-right-link" aria-labelledby="title  desc"><!--
+   --><title id="title">internal link (same page)</title><!--
+   --><desc id="desc">arrow pointing right</desc><!--
+   --><use role="presentation" xlink:href="assets/svg/sprite.svg#to-right"></use><!--
+ --></svg></button>
 
 </section>
