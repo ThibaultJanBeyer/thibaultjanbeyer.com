@@ -15,6 +15,11 @@ var getJsonData = function() {
   return JSON.parse(fs.readFileSync('./src/data.json'));
 };
 
+var htmlminOptions = {
+  collapseWhitespace: true,
+  removeComments: true
+};
+
 module.exports = function () {
   console.log('~~~~~~~~~~~ Flawless :-) ~~~~~~~~~');
   return gulp.src(htmlSrc)
@@ -27,7 +32,7 @@ module.exports = function () {
     .pipe(data(getJsonData))
     .pipe(nunjucksRender({ path: ['./src/templates'] }))
     .pipe(htmlhint())
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin(htmlminOptions))
     .pipe(size({title: 'HTML'}))
     .pipe(gulp.dest(htmlDst));
 };
