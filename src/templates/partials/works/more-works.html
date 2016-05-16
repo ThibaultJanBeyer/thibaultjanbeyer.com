@@ -21,8 +21,12 @@
       <p id="dialogDescription" class="more-works__description copy">
         See almost all works I’ve ever done here or 
         <a href="assets/pdf/thibault-jan-beyer_pdf-portfolio.pdf" class="metalink welcome-info__link">
-          download my pdf&nbsp;portfolio
-        </a>
+          download my pdf&nbsp;portfolio<!--
+      --><svg xmlns="http://www.w3.org/2000/svg" role="img" class="download-link" aria-labelledby="title  desc"><!--
+        --><title id="title">download</title><!--
+        --><desc id="desc">arrow down to to a folder</desc><!--
+        --><use role="presentation" xlink:href="assets/svg/sprite.svg#download"></use><!--
+      --></svg></a>
       </p>
 
         {% for year, works in allWorks %}
@@ -35,6 +39,11 @@
               <div class="more-works-work">
                 <a href="{{ work.url }}" target="_blank" class="more-works-work__container">
                   <img data-src="{{ work.src }}" alt="{{ work.alt }}" class="more-works-work__img">
+                  <svg xmlns="http://www.w3.org/2000/svg" role="img" class="external-link external-link--img" aria-labelledby="title  desc">
+                    <title id="title">external link (new window)</title>
+                    <desc id="desc">square with arrow pointing outside</desc>
+                    <use role="presentation" xlink:href="assets/svg/sprite.svg#external-link"></use>
+                  </svg>
                   <h3 class="more-works-work__title">
                     {{ work.title }}
                   </h3>
