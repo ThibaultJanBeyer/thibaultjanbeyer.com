@@ -1,0 +1,18 @@
+.footer {
+  @include font-size-responsive($delta);
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.footer__icon {
+  height: 15px;
+  margin-left: 15px;
+  width: 20px;
+  vertical-align: middle;
+}
+
+.footer__copyright {
+  margin: 10px;
+}
