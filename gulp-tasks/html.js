@@ -26,12 +26,6 @@ module.exports = function () {
     }))
     .pipe(data(getJsonData))
     .pipe(nunjucksRender({ path: ['./src/templates'] }))
-    .pipe(plumber({
-      errorHandler: function (err) {
-        console.log(err);
-        this.emit('end');
-      }
-    }))
     .pipe(htmlhint())
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(size({title: 'HTML'}))
