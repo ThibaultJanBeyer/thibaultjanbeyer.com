@@ -17,3 +17,9 @@ var forEach = function (array, callback, scope) {
     callback.call(scope, i, array[i]); // passes back stuff we need to callback into 
   }
 };
+
+(function(){
+  setTimeout(function() {
+    document.getElementsByClassName('preloader')[0].classList.add('preloader--loaded');
+  }, 1500);
+})();

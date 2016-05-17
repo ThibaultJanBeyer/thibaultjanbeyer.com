@@ -50,7 +50,7 @@ myLoop({
         thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ countup +".jpg");
       }
     );
-  }, 1600);
+  }, 2000);
 
   /*
   * Check Scroll
