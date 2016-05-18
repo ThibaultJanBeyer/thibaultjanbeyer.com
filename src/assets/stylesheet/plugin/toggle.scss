@@ -14,11 +14,7 @@
 }
 
 .toggle--open {
-  max-height: 1000px;
-
-  @include media('>large') {  
-    max-height: 800px;
-  }
+  max-height: 800px;
 }
 
 .toggle--button {
