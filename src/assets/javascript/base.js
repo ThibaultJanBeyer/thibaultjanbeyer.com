@@ -1,4 +1,5 @@
 'use strict'; // jshint -W097
+/*jslint browser: true*/
 /*
  * Shared Globals
  */
