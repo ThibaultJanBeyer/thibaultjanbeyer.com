@@ -1,9 +1,12 @@
 /*
- * Toggle content. impossible to transition height from value to auto, so workaround with max height
+ * Toggles content
+ *
+ * Impossible to transition height from value to auto, so workaround with max height
+ *
  */
 .toggle {
   overflow: hidden;
-  transition: max-height 0.6s ease-out;
+  transition: max-height 1s ease-out;
 }
 
 .toggle--close {
@@ -11,14 +14,10 @@
 }
 
 .toggle--open {
-  max-height: 600px;
+  max-height: 1000px;
 
   @include media('>large') {  
-    max-height: 400px;
-  }
-
-  @include media('>xlarge') {  
-    max-height: 300px;
+    max-height: 800px;
   }
 }
 
