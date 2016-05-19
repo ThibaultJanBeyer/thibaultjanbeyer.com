@@ -7,8 +7,12 @@
 (function (global) {
 
   // Helper function to get all focusable children from a node
-  function getFocusableChildren (node) {
-    var focusableElements = ['a[href]', 'area[href]', 'input:not([disabled])', 'select:not([disabled])', 'textarea:not([disabled])', 'button:not([disabled])', 'iframe', 'object', 'embed', '[contenteditable]', '[tabindex]:not([tabindex^="-"])'];
+  function getFocusableChildren(node) {
+    var focusableElements = [
+      'a[href]', 'area[href]', 'input:not([disabled])', 'select:not([disabled])',
+      'textarea:not([disabled])', 'button:not([disabled])', 'iframe', 'object',
+      'embed', '[contenteditable]', '[tabindex]:not([tabindex^="-"])'
+    ];
 
     return $$(focusableElements.join(','), node).filter(function (child) {
       return !!(child.offsetWidth || child.offsetHeight || child.getClientRects().length);
@@ -16,12 +20,12 @@
   }
 
   // Helper function to get all nodes in context matching selector as an array
-  function $$ (selector, context) {
+  function $$(selector, context) {
     return Array.prototype.slice.call((context || document).querySelectorAll(selector));
   }
 
   // Helper function trapping the tab key inside a node
-  function trapTabKey (node, event) {
+  function trapTabKey(node, event) {
     var focusableChildren = getFocusableChildren(node);
     var focusedItemIndex = focusableChildren.indexOf(document.activeElement);
 
@@ -35,7 +39,7 @@
   }
 
   // Helper function to focus first focusable item in node
-  function setFocusToFirstItem (node) {
+  function setFocusToFirstItem(node) {
     var focusableChildren = getFocusableChildren(node);
     if (focusableChildren.length) focusableChildren[0].focus();
   }
@@ -75,48 +79,48 @@
       }
     });
 
-    function maintainFocus (event) {
+    function maintainFocus(event) {
       if (that.shown && !node.contains(event.target)) {
         setFocusToFirstItem(node);
       }
     }
 
-    function show () {
+    function show() {
       that.shown = true;
       node.removeAttribute('aria-hidden');
       main.setAttribute('aria-hidden', 'true');
       focusedBeforeDialog = document.activeElement;
       setFocusToFirstItem(node);
       document.body.addEventListener('focus', maintainFocus, true);
-      
+
       // TJB Modifications [start]
-      thibaultImgMain.classList.add("more-works--hider"); // hides img because weird behaviour
-      main.classList.add("more-works--pusher"); // pushes main to the left
-      node.classList.remove("more-works--start"); // pushes more-works to the left
-      document.body.classList.add("more-works--locker"); // removes the scroll ability
-      document.getElementsByTagName('html')[0].classList.add("more-works--locker"); // removes the scroll ability
+      thibaultImgMain.classList.add('more-works--hider'); // hides img because weird behaviour
+      main.classList.add('more-works--pusher'); // pushes main to the left
+      node.classList.remove('more-works--start'); // pushes more-works to the left
+      document.body.classList.add('more-works--locker'); // removes the scroll ability
+      document.getElementsByTagName('html')[0].classList.add('more-works--locker'); // removes the scroll ability
       WORKS_OPEN = true;
       // TJB Modifications [end]
     }
 
-    function hide () {
+    function hide() {
       // TJB Modifications [start]
-      node.classList.add("more-works--start"); // pushes more-works to the right
-      main.classList.remove("more-works--pusher"); // pushes main to the right
-      setTimeout(function() {  // makes sure that normal behaviour is dilayed by 1s
-      // TJB Modifications [end]
+      node.classList.add('more-works--start'); // pushes more-works to the right
+      main.classList.remove('more-works--pusher'); // pushes main to the right
+      setTimeout(function () {  // makes sure that normal behaviour is dilayed by 1s
+        // TJB Modifications [end]
 
-      that.shown = false;
-      node.setAttribute('aria-hidden', 'true');
-      main.removeAttribute('aria-hidden');
-      focusedBeforeDialog && focusedBeforeDialog.focus(); // jshint ignore:line
-      document.body.removeEventListener('focus', maintainFocus, true);
-      
-      // TJB Modifications [start]
-      thibaultImgMain.classList.remove("more-works--hider"); // show weird img again
-      document.body.classList.remove("more-works--locker"); // restores the scroll ability
-      document.getElementsByTagName('html')[0].classList.remove("more-works--locker"); // restores the scroll ability
-      WORKS_OPEN = false;
+        that.shown = false;
+        node.setAttribute('aria-hidden', 'true');
+        main.removeAttribute('aria-hidden');
+        focusedBeforeDialog && focusedBeforeDialog.focus(); // jshint ignore:line
+        document.body.removeEventListener('focus', maintainFocus, true);
+
+        // TJB Modifications [start]
+        thibaultImgMain.classList.remove('more-works--hider'); // show weird img again
+        document.body.classList.remove('more-works--locker'); // restores the scroll ability
+        document.getElementsByTagName('html')[0].classList.remove('more-works--locker'); // restores the scroll ability
+        WORKS_OPEN = false;
       }, 1000);
       // TJB Modifications [end]
     }
@@ -131,7 +135,7 @@
   } else if (typeof global === 'object') {
     global.A11yDialog = A11yDialog;
   }
-}(window));
+} (window));
 
 // Get the dialog element (with the accessor method you want)
 var dialogEl = document.getElementById('more-works');

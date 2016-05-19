@@ -5,8 +5,8 @@
  */
 (function () {
   var wasWritten = [false, false, false, false]; // 4 levers
-  var writerQuestion = getChar(document.getElementsByClassName("writer-question"));
-  var writerAnswer = getChar(document.getElementsByClassName("writer-answer"));
+  var writerQuestion = getChar(document.getElementsByClassName('writer-question'));
+  var writerAnswer = getChar(document.getElementsByClassName('writer-answer'));
   var writerQuestionHidden = document.getElementsByClassName('writer-question--hidden');
   var writerAnswerHidden = document.getElementsByClassName('writer-answer--hidden');
 
@@ -23,7 +23,7 @@
       array[i] = object;
 
       // delete original text
-      nodes[i].textContent = "";
+      nodes[i].textContent = '';
     }
     return array;
   }
@@ -37,8 +37,8 @@
     // Since it’s the first step is somewhat special it will get its own if clause,
     if (step === 1) {
 
-      document.getElementsByClassName("concact-pic--big")[0].classList.remove("concact-pic--big");
-      
+      document.getElementsByClassName('concact-pic--big')[0].classList.remove('concact-pic--big');
+
       setTimeout(function () {
         // the first loop will reveal the first elements chars, hence element 0
         // afterwards it will call the secong loop
@@ -109,13 +109,13 @@
   var liveName = document.getElementById('liveName');
   myName.onkeyup = function (e) {
     liveName.textContent = myName.value;
-    if (e.keyCode == 13 && wasWritten[1] === false) {
+    if (e.keyCode === 13 && wasWritten[1] === false) {
       e.preventDefault();
       writeChar(2);
     }
   };
   // or if the next button is hit
-  nextButtons[0].addEventListener("click", function (e) {
+  nextButtons[0].addEventListener('click', function (e) {
     e.preventDefault();
     if (wasWritten[1] === false) {
       liveName.textContent = myName.value;
@@ -126,10 +126,10 @@
   // adapting the height of the second input to it’s content
   var myMessage = document.getElementById('myMessage');
   myMessage.onkeyup = function (e) {
-    myMessage.style.height = myMessage.scrollHeight + "px";
+    myMessage.style.height = myMessage.scrollHeight + 'px';
   };
   // if the submit button is hit
-  nextButtons[1].addEventListener("click", function (e) {
+  nextButtons[1].addEventListener('click', function (e) {
     e.preventDefault();
     if (wasWritten[2] === false) {
       writeChar(3);
@@ -138,10 +138,10 @@
   });
 
   function writeMail() {
-    var mailto = "hi@thibaultjanbeyer.com";
-    var subject = encodeURI("Hi Thibault, my name is ") + encodeURI(myName.value);
-    var body = encodeURI("I just wanted to say... ") + "%0A%0A" + encodeURI(myMessage.value);
-    window.location.href = "mailto:" + mailto + "?Subject=" + subject + "&Body=" + body;
+    var mailto = 'hi@thibaultjanbeyer.com';
+    var subject = encodeURI('Hi Thibault, my name is ') + encodeURI(myName.value);
+    var body = encodeURI('I just wanted to say... ') + '%0A%0A' + encodeURI(myMessage.value);
+    window.location.href = 'mailto:' + mailto + '?Subject=' + subject + '&Body=' + body;
   }
 
 })();

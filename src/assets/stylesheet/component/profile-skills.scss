@@ -29,5 +29,6 @@
 
   @include media('>medium') {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 }

@@ -1,5 +1,5 @@
 'use strict'; // jshint -W097
-/*jslint browser: true*/
+/*jshint browser: true*/
 /*
  * Shared Globals
  */
@@ -19,8 +19,8 @@ var forEach = function (array, callback, scope) {
   }
 };
 
-(function(){
-  setTimeout(function() {
+(function () {
+  setTimeout(function () {
     document.getElementsByClassName('preloader')[0].classList.add('preloader--loaded');
   }, 1500);
 })();

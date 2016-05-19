@@ -1,6 +1,6 @@
 var gulp = require('gulp');
-var scsslint = require('gulp-scss-lint');
 var sass = require('gulp-sass');
+var scsslint = require('gulp-scss-lint');
 var plumber = require('gulp-plumber');
 var autoprefixer = require('gulp-autoprefixer');
 var csso = require('gulp-csso');
@@ -9,6 +9,10 @@ var size = require('gulp-size');
 
 var scssSrc = './src/assets/stylesheet/bundle.scss',
     scssDst = './dist/assets/stylesheet/';
+
+var sassOptions = {
+  errLogToConsole: true
+};
 
 module.exports = function () {
   console.log('~~~~~~~~~~~ I luv your sass, Master :-) ~~~~~~~~~');
@@ -20,7 +24,7 @@ module.exports = function () {
       }
     }))
     .pipe(scsslint())
-    .pipe(sass())
+    .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(concat('bundle.css'))
     .pipe(csso())

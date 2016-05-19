@@ -17,6 +17,7 @@
     "gulp-htmlhint": "*",
     "gulp-htmlmin": "*",
     "gulp-imagemin": "*",
+    "gulp-jscs": "^3.0.2",
     "gulp-jshint": "*",
     "gulp-nunjucks-render": "^2.0.0",
     "gulp-plumber": "*",
@@ -24,7 +25,8 @@
     "gulp-scss-lint": "*",
     "gulp-size": "*",
     "gulp-svg-sprite": "*",
-    "gulp-uglify": "*"
+    "gulp-uglify": "*",
+    "jshint-stylish": "^2.2.0"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-var thibaultImgMain = document.getElementById("thibault-img-main");
+var thibaultImgMain = document.getElementById('thibault-img-main');
 
 /**
  * A loop with timeouts.
@@ -26,20 +26,20 @@ function myLoop(options, callback, scope) { // pass number of iterations and dur
  * 
  */
 myLoop({
-        countdown: 9, // number of iterations
-        duration: 150, // in ms
-        countup: 0 // starts to count up at 0 
-      },
-      (countdown, duration, countup) => { // what happens each time
-        thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ countdown +".jpg");
-      });
+  countdown: 9, // number of iterations
+  duration: 150, // in ms
+  countup: 0 // starts to count up at 0 
+},
+  (countdown, duration, countup) => { // what happens each time
+    thibaultImgMain.setAttribute('src', 'assets/img/thibault-jan-beyer_' + countdown + '.jpg');
+  });
 
 /*
  * iterate
  * 
  */
-(function() {
-  setTimeout(function() {
+(function () {
+  setTimeout(function () {
     myLoop(
       {
         countdown: 9, // number of iterations
@@ -47,7 +47,7 @@ myLoop({
         countup: 0 // starts to count up at 0 
       },
       (countdown, duration, countup) => { // what happens each time
-        thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ countup +".jpg");
+        thibaultImgMain.setAttribute('src', 'assets/img/thibault-jan-beyer_' + countup + '.jpg');
       }
     );
   }, 2000);
@@ -58,43 +58,43 @@ myLoop({
   */
   var scrolledUp = true;
   var scrolledDown = false;
-  var welcome = document.getElementById("welcome");
+  var welcome = document.getElementById('welcome');
   var turnbackPoint = welcome.offsetHeight / 4;
   var full = welcome.offsetHeight;
   var didScroll = false;
   var passed = false;
 
-  setInterval(function() {
+  setInterval(function () {
     // check every 1 second if scroll is more than 1/4 of window size and scroll down or up
-    if ( scrolledDown === false ) {
+    if (scrolledDown === false) {
       // if the window is scrolled by more than 1/4
-      if( WINDOW_SCROLL_TOP >= turnbackPoint ) {
+      if (WINDOW_SCROLL_TOP >= turnbackPoint) {
         // run the animation
         myLoop({
           countdown: 9, // number of iterations
           duration: 150, // in ms
           countup: 0 // starts to count up at 0 
         },
-        (countdown, duration, countup) => { // what happens each time
-          thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ countdown +".jpg");
-        });
+          (countdown, duration, countup) => { // what happens each time
+            thibaultImgMain.setAttribute('src', 'assets/img/thibault-jan-beyer_' + countdown + '.jpg');
+          });
         // tell that it has been successfully scrolled down
         scrolledDown = true;
         scrolledUp = false;
       }
     }
-    if ( scrolledUp === false ) {
+    if (scrolledUp === false) {
       // check every 1 second if scroll is less than window height and scroll down or up
-      if( WINDOW_SCROLL_TOP < turnbackPoint ) {
+      if (WINDOW_SCROLL_TOP < turnbackPoint) {
         // run the animation
         myLoop({
           countdown: 9, // number of iterations
           duration: 150, // in ms
           countup: 0 // starts to count up at 0 
         },
-        (countdown, duration, countup) => { // what happens each time
-          thibaultImgMain.setAttribute("src", "assets/img/thibault-jan-beyer_"+ countup +".jpg");
-        });
+          (countdown, duration, countup) => { // what happens each time
+            thibaultImgMain.setAttribute('src', 'assets/img/thibault-jan-beyer_' + countup + '.jpg');
+          });
         // tell that it has been successfully scrolled down
         scrolledUp = true;
         scrolledDown = false;
@@ -102,5 +102,5 @@ myLoop({
     }
   }, 850);
 
-//end
+  //end
 })();
