@@ -411,7 +411,7 @@
         "info": "2013 - today • studies",
         "description": [
           "at <a href=\"http://www.designstudium.com/\" class=\"metalink\">Cologne Design Academy (KDA)</a>, Germany",
-          "expected graduation with extended diploma in communication design (3 years), expected grade of 1.0 (honors)",
+          "expected graduation, extended diploma in communication design (3 years), with honors",
           "final thesis: accessible web – open up websites for the physically impaired"
         ],
         "icon": "certificate",
@@ -444,7 +444,7 @@
       },
       {
         "title": "Der Bergdoktor ZDF",
-        "info": "2010 • training stage design",
+        "info": "2010 • stage design",
         "description": [
           "6 month internship/training at <a href=\"http://www.ndf.de/\" class=\"metalink\">ndF Filmgesellschaft</a> in Ellmau, Austria. Popular German TV show: <a href=\"http://www.zdf.de/der-bergdoktor/der-bergdoktor-5988550.html\" class=\"metalink\">der Bergdoktor ZDF</a>",
           "learned to quickly get my bearings and settle into new environments, how to design a stage and how to tell compelling stories",
@@ -488,7 +488,7 @@
         "description": [
           "work as a designer and developer for <a href=\"http://agentur-rubbeldiekatz.de/\" class=\"metalink\">agentur-rubbeldiekatz</a> Bonn, Germany",
           "redesign of 2 websites: <a href=\"http://outdoorgym.de/\" class=\"metalink\">outdoorgym</a> & <a href=\"http://apt-service.de/\" class=\"metalink\">apt</a>",
-          "3D prototyping for <a href=\"https://www.i22.de/\" class=\"metalink\">i22</a> one of the largest digital companies",
+          "3D prototyping for <a href=\"https://www.i22.de/\" class=\"metalink\">i22</a> one of the largest web companies in western germany",
           "led over a dozen creative marketing campaigns, corporate identity designs and the branding of almost all clients"
         ],
         "icon": "digital-employed",
@@ -544,6 +544,7 @@
       "html & css&nbsp;•••",
       "jquery&nbsp;•••",
       "plugins & cms&nbsp;•••",
+      "accessibility&nbsp;••",
       "git, gulp&nbsp;••",
       "javascript&nbsp;••",
       "angular&nbsp;••",

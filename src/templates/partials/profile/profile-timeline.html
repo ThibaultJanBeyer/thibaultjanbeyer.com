@@ -38,9 +38,8 @@
   </div>
   
   {% if loop.first %}
-  <svg xmlns=http://www.w3.org/2000/svg role="img" class="profile-timeline__separator" aria-labelledby="title  desc">
-    <title id="title">separation line</title>
-    <desc id="desc">a vertical line in zigzag shape separating the content</desc>
+  <!-- no aria because only a decorative element -->
+  <svg xmlns=http://www.w3.org/2000/svg role="img" class="profile-timeline__separator">
     <use role="presentation" xlink:href="assets/svg/sprite.svg#zigzag-vertical"></use>
   </svg>
   {% endif %}

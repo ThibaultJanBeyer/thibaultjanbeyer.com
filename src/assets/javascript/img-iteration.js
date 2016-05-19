@@ -27,7 +27,7 @@ function myLoop(options, callback, scope) { // pass number of iterations and dur
  */
 myLoop({
         countdown: 9, // number of iterations
-        duration: 125, // in ms
+        duration: 150, // in ms
         countup: 0 // starts to count up at 0 
       },
       (countdown, duration, countup) => { // what happens each time
@@ -43,7 +43,7 @@ myLoop({
     myLoop(
       {
         countdown: 9, // number of iterations
-        duration: 125, // in ms
+        duration: 150, // in ms
         countup: 0 // starts to count up at 0 
       },
       (countdown, duration, countup) => { // what happens each time
@@ -72,7 +72,7 @@ myLoop({
         // run the animation
         myLoop({
           countdown: 9, // number of iterations
-          duration: 125, // in ms
+          duration: 150, // in ms
           countup: 0 // starts to count up at 0 
         },
         (countdown, duration, countup) => { // what happens each time
@@ -89,7 +89,7 @@ myLoop({
         // run the animation
         myLoop({
           countdown: 9, // number of iterations
-          duration: 125, // in ms
+          duration: 150, // in ms
           countup: 0 // starts to count up at 0 
         },
         (countdown, duration, countup) => { // what happens each time

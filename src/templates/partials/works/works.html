@@ -3,9 +3,8 @@
 <section id="works" class="section works">
   <h2 class="copy works__title">
     portfolio
-    <svg xmlns="http://www.w3.org/2000/svg" role="img" class="zigzag--small" aria-labelledby="title  desc">
-      <title id="title">separation line</title>
-      <desc id="desc">horizontal line in zigzag shape separating the content</desc>
+    <!-- no aria because only a decorative element -->
+    <svg xmlns="http://www.w3.org/2000/svg" role="img" class="zigzag--small">
       <use role="presentation" xlink:href="assets/svg/sprite.svg#zigzag-small"></use>
     </svg>
   </h2>
@@ -16,9 +15,8 @@
         data-scroll--speed="{{ 80 - (loop.index * 20) }} ">
       <a href="{{ featuredWork.url }}" target="_blank" class="works-work__container">
         <img src="{{ featuredWork.src }}" alt="{{ featuredWork.alt }}" class="works-work__image">
-        <svg xmlns="http://www.w3.org/2000/svg" role="img" class="external-link external-link--img" aria-labelledby="title  desc">
+        <svg xmlns="http://www.w3.org/2000/svg" role="img" class="external-link external-link--img" aria-labelledby="title">
           <title id="title">external link (new window)</title>
-          <desc id="desc">square with arrow pointing outside</desc>
           <use role="presentation" xlink:href="assets/svg/sprite.svg#external-link"></use>
         </svg>
         <h3 class="works-work__title works-work__title--{{ featuredWork.modifier }} copy scroll scroll--permanent"
@@ -32,9 +30,8 @@
 
   <button class="button button--large metalink copy" type="button" data-a11y-dialog-show="more-works">
     see more works<!--
- --><svg xmlns="http://www.w3.org/2000/svg" role="img" class="internal-right-link" aria-labelledby="title  desc"><!--
+ --><svg xmlns="http://www.w3.org/2000/svg" role="img" class="internal-right-link" aria-labelledby="title"><!--
    --><title id="title">internal link (same page)</title><!--
-   --><desc id="desc">arrow pointing right</desc><!--
    --><use role="presentation" xlink:href="assets/svg/sprite.svg#to-right"></use><!--
  --></svg></button>
 
