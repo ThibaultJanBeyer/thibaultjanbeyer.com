@@ -2,8 +2,7 @@
 
 <footer class="footer copy" role="contentinfo">
   <span class="footer__social email">
-     <svg xmlns="http://www.w3.org/2000/svg" role="img" class="footer__icon" aria-labelledby="title">
-       <title>email icon</title>
+     <svg xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true" class="footer__icon">
        <use role="presentation" xlink:href="assets/svg/sprite.svg#email"></use>
      </svg>
      <a href="mailto:hi@thibaultjanbeyer.com" class="metalink copy" target="_blank">
@@ -11,8 +10,7 @@
      </a>
    </span>
   <span class="footer__social twitter">
-     <svg xmlns="http://www.w3.org/2000/svg" role="img" class="footer__icon" aria-labelledby="title">
-       <title>twitter logo</title>
+     <svg xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true" class="footer__icon">
        <use role="presentation" xlink:href="assets/svg/sprite.svg#twitter"></use>
      </svg>
      <a href="https://twitter.com/ThibaultBeyer" class="metalink copy" target="_blank">
@@ -20,8 +18,7 @@
      </a>
    </span>
   <span class="footer__social github">
-     <svg xmlns="http://www.w3.org/2000/svg" role="img" class="footer__icon" aria-labelledby="title">
-       <title>github logo</title>
+     <svg xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true" class="footer__icon">
        <use role="presentation" xlink:href="assets/svg/sprite.svg#github"></use>
      </svg>
      <a href="https://github.com/ThibaultJanBeyer" class="metalink copy" target="_blank">
@@ -30,7 +27,7 @@
    </span>
   <!--
    <span class="footer__social codepen">
-     <svg xmlns="http://www.w3.org/2000/svg" role="img" class="footer__icon" aria-labelledby="title">
+     <svg xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true" class="footer__icon">
        <title>codepen logo</title>
        <use role="presentation" xlink:href="assets/svg/sprite.svg#codepen"></use>
      </svg>
@@ -38,5 +35,13 @@
   </span>
   -->
   <p class="footer__copyright copy">All content by Thibault Jan Beyer unless noted otherwise.</p>
-  <p>PS: you can <a href="https://github.com/ThibaultJanBeyer/thibaultjanbeyer.com-v10" class="metalink">find this portfolio on github</a></p>
+  <p>PS: you can 
+    <a href="https://github.com/ThibaultJanBeyer/thibaultjanbeyer.com-v10" class="metalink">
+      find this portfolio on github
+      <svg xmlns="http://www.w3.org/2000/svg" role="img" class="external-link external-link--text" aria-labelledby="title_external">  
+        <title id="title_external">external link (new window)</title>
+        <use role="presentation" xlink:href="assets/svg/sprite.svg#external-link"></use>
+      </svg>
+    </a>
+  </p>
 </footer>

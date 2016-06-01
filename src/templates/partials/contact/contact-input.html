@@ -1,3 +1,4 @@
+<!-- @TODO: make contact accessible (don’t remove the text with writer for screen readers) -->
 <div class="contact-input">
   <form id="contactForm" class="contact-input__form" action="javascript:void(0);">
     <label class="sr-only" form="contactForm">contact form:</label>
@@ -6,7 +7,7 @@
         Hi Thibault, my name is
       </label>
       <input type="text" name="myName" id="myName" class="contact-input__input">
-      <button type="button" class="button contact-input__next writer--next">
+      <button type="button" role="presentation" aria-hidden="true" class="button contact-input__next writer--next">
          > 
         <span class="sr-only">(info: go to next input field)</span>
       </button>

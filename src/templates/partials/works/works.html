@@ -4,7 +4,7 @@
   <h2 class="copy works__title">
     portfolio
     <!-- no aria because only a decorative element -->
-    <svg xmlns="http://www.w3.org/2000/svg" role="img" class="zigzag--small">
+    <svg xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true" class="zigzag--small">
       <use role="presentation" xlink:href="assets/svg/sprite.svg#zigzag-small"></use>
     </svg>
   </h2>
@@ -15,9 +15,10 @@
         data-scroll--speed="{{ 80 - (loop.index * 20) }} ">
       <a href="{{ featuredWork.url }}" target="_blank" class="works-work__container">
         <img src="{{ featuredWork.src }}" alt="{{ featuredWork.alt }}" class="works-work__image">
-        <svg xmlns="http://www.w3.org/2000/svg" role="img" class="external-link external-link--img" aria-labelledby="title">
-          <title id="title">external link (new window)</title>
-          <use role="presentation" xlink:href="assets/svg/sprite.svg#external-link"></use>
+        <svg xmlns="http://www.w3.org/2000/svg" role="img" class="external-link external-link--img" aria-labelledby="title_external">  
+          <title>external link (new window)</title>
+          <desc>square with arrow pointing outside</desc>
+          <use role="presentation" aria-hidden="true" xlink:href="assets/svg/sprite.svg#external-link"></use>
         </svg>
         <h3 class="works-work__title works-work__title--{{ featuredWork.modifier }} copy scroll scroll--permanent"
         data-scroll--speed="10">

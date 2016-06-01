@@ -1,7 +1,7 @@
 <div class="welcome-person">
   <div class="welcome-person__container">
     <img id="thibault-img-main" src="assets/img/thibault-jan-beyer_9.jpg" class="scroll welcome-person__img" alt="Headless body holding a laptop with a picture of Thibault Jan Beyer’s on screen">
-    <!-- hidden imgs are only there for preloading reasons and smoother animation. hidden to prevent screen readers to read it, but some will ignore that hidden and still read them, that is why: -->
+    <!-- hidden imgs are only there for preloading reasons and smoother animation. hidden to prevent screen readers to read it, but very old ones will ignore that hidden and still read them, that is why: -->
     <!-- dumb alt tag "o", without alt some SR would read the filename instead, like this they just read 9x "o", annoying but less than 9x the filename -->
     {% for i in range(0, 8) -%}
       <img src="assets/img/thibault-jan-beyer_{{ i }}.jpg" class="sr-only" style="visibility: hidden;" alt="o">

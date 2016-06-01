@@ -24,7 +24,7 @@
     "gulp-sass": "*",
     "gulp-scss-lint": "*",
     "gulp-size": "*",
-    "gulp-svg-sprite": "*",
+    "gulp-svg-sprite": "1.2.x",
     "gulp-uglify": "*",
     "jshint-stylish": "^2.2.0"
   },
