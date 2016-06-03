@@ -7,7 +7,12 @@
  */
 (function () {
 	var buttons = document.querySelectorAll('.toggle--button');
-	var containers = document.querySelectorAll('.toggle');
+	var closedContainers = document.querySelectorAll('toggle--close');
+  
+  [].forEach.call(closedContainers, function (el) {
+    //hide
+		el.classList.add('hidden');
+	});
 
 	[].forEach.call(buttons, function (el) {
 		el.addEventListener('click', function () {
@@ -20,18 +25,29 @@
 		var scope = getParentScope(el, 'toggle--scope');
 		// get the element that will be toggled in that scope
 		var toggleElement = scope.querySelector(':scope > .toggle');
-
+    
+    //if closed
 		if (toggleElement.classList.contains('toggle--close')) {
 
+      // show for everyone
+      toggleElement.classList.remove('hidden');
+      
 			el.classList.add('toggle--button-close');
 			toggleElement.classList.remove('toggle--close');
 			toggleElement.classList.add('toggle--open');
 
+    //if opened
 		} else if (toggleElement.classList.contains('toggle--open')) {
 
 			toggleElement.classList.remove('toggle--open');
 			toggleElement.classList.add('toggle--close');
+      
 			el.classList.remove('toggle--button-close');
+      
+      // hide for everyone (after delay)
+      setTimeout(function() {
+        toggleElement.classList.add('hidden');
+      }, 1000);
 
 		} else {
 

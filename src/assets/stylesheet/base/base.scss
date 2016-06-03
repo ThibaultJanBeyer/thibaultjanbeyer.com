@@ -30,7 +30,7 @@ section {
 }
 
 /**
- * for screen readers only (accessibility)
+ * visible for screen readers only (accessibility)
  */
 .sr-only {
   position: absolute;
@@ -41,6 +41,13 @@ section {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+/**
+ * hidden for everyone
+ */
+.hidden {
+  display: none;
+  visibility: hidden;
 }
 
 .preloader {
