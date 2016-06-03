@@ -1,25 +1,25 @@
-<!-- @TODO: make contact accessible (don’t remove the text with writer for screen readers) -->
 <div class="contact-input">
   <form id="contactForm" class="contact-input__form" action="javascript:void(0);">
     <label class="sr-only" form="contactForm">contact form:</label>
     <p class="contact-input__container">
-      <label for="myName" class="writer writer-answer contact-input__label copy">
-        Hi Thibault, my name is
+      <label for="myName">
+        <span class="sr-only">Hi Tibo, my name is</span>
+        <span class="writer writer-answer contact-input__label copy" role="presentation" aria-hidden="true">Hi Thibault, my name is</span>
       </label>
       <input type="text" name="myName" id="myName" class="contact-input__input">
       <button type="button" role="presentation" aria-hidden="true" class="button contact-input__next writer--next">
-         > 
-        <span class="sr-only">(info: go to next input field)</span>
+         >
       </button>
     </p>
     <p class="contact-input__container writer writer-answer--hidden">
-      <label for="myMessage" class="writer writer-answer contact-input__label copy">
-        I just wanted to say...
+      <label for="myMessage">
+        <span class="sr-only">I just wanted to say</span>
+        <span class="writer writer-answer contact-input__label copy" role="presentation" aria-hidden="true">I just wanted to say...</span>
       </label>
       <textarea name="myMessage" id="myMessage" class="contact-input__input"></textarea>
       <button type="button" class="button metalink contact-input__submit writer--next">
         Send
-        <span class="sr-only">(info: mailto opens local email client with email, subject, message pre-written. You’ll just have to send it)</span>
+        <span class="sr-only">. Info: clicking this button opens your local email client with the email, the subject and the message pre-written. You’ll just have to send it.</span>
         <svg xmlns="http://www.w3.org/2000/svg" role="img" class="contact-input__icon" aria-labelledby="title">
           <title>email icon</title>
           <use role="presentation" xlink:href="assets/svg/sprite.svg#email"></use>
