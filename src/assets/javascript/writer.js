@@ -1,6 +1,7 @@
 /**
  *
  * The writer will take text, hide it and then create a fake text-writing animation
+ * * by http://thibaultjanbeyer.com
  *
  */
 (function () {
