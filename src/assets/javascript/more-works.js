@@ -94,20 +94,30 @@
       document.body.addEventListener('focus', maintainFocus, true);
 
       // TJB Modifications [start]
-      thibaultImgMain.classList.add('more-works--hider'); // hides img because weird behaviour
-      main.classList.add('more-works--pusher'); // pushes main to the left
-      node.classList.remove('more-works--start'); // pushes more-works to the left
-      document.body.classList.add('more-works--locker'); // removes the scroll ability
-      document.getElementsByTagName('html')[0].classList.add('more-works--locker'); // removes the scroll ability
+      // add the hash to get the browse back button working
+      if(history.pushState) { history.pushState(null, null, '#moreWorks'); }
+      else { window.location.hash = '#moreWorks'; }
+      // hide img because weird behaviour
+      thibaultImgMain.classList.add('more-works--hider');
+      // push main to the left 
+      main.classList.add('more-works--pusher');
+      // push more-works to the left
+      node.classList.remove('more-works--start');
+      // remove the scroll ability
+      document.body.classList.add('more-works--locker');
+      document.getElementsByTagName('html')[0].classList.add('more-works--locker');
       WORKS_OPEN = true;
       // TJB Modifications [end]
     }
 
     function hide() {
       // TJB Modifications [start]
-      node.classList.add('more-works--start'); // pushes more-works to the right
-      main.classList.remove('more-works--pusher'); // pushes main to the right
-      setTimeout(function () {  // makes sure that normal behaviour is dilayed by 1s
+      // push more-works to the right
+      node.classList.add('more-works--start');
+      // push main to the right
+      main.classList.remove('more-works--pusher');
+      // make sure that normal behaviour is dilayed by 1s
+      setTimeout(function () {
         // TJB Modifications [end]
 
         that.shown = false;
@@ -117,13 +127,27 @@
         document.body.removeEventListener('focus', maintainFocus, true);
 
         // TJB Modifications [start]
-        thibaultImgMain.classList.remove('more-works--hider'); // show weird img again
-        document.body.classList.remove('more-works--locker'); // restores the scroll ability
-        document.getElementsByTagName('html')[0].classList.remove('more-works--locker'); // restores the scroll ability
+        // show weird img again
+        thibaultImgMain.classList.remove('more-works--hider');
+        // restore the scroll ability
+        document.body.classList.remove('more-works--locker');
+        document.getElementsByTagName('html')[0].classList.remove('more-works--locker');
         WORKS_OPEN = false;
+        // reset the hash
+        if(history.pushState) { history.pushState(null, null, '#'); }
+        // leave this out, might confuse mobile users: else { window.location.hash = '#'; }
       }, 1000);
       // TJB Modifications [end]
     }
+
+    setInterval(function() {
+      var hash = window.location.hash;
+      if(hash.indexOf('moreWorks') >= 0 && !WORKS_OPEN){
+        show();
+      } else if(hash.indexOf('moreWorks') < 0 && WORKS_OPEN){
+        hide();
+      }
+    }, 2000);
   };
 
   if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
