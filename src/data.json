@@ -416,11 +416,11 @@
     "education": [
       {
         "title": "communications design",
-        "info": "2013 - today • studies",
+        "info": "2013 - 2016 • studies",
         "description": [
           "at <a href=\"http://www.designstudium.com/\" class=\"metalink\">Cologne Design Academy (KDA)</a>, Germany",
           "expected graduation, extended diploma in communication design (3 years), with honors",
-          "final thesis: accessible web – open up websites for the physically impaired"
+          "final thesis: accessible web – open up websites for the physically impaired (won 3 awards)"
         ],
         "icon": "certificate",
         "iconTitle": "certificate",
@@ -478,6 +478,18 @@
       }
     ],
     "employment": [
+      {
+        "title": "Hi-ReS!",
+        "info": "2016 • Interactive Developer",
+        "description": [
+          "Worked as full time interactive developer for <a href=\"http://hi-res.de/de/\" class=\"metalink\">Hi-ReS! Berlin</a> on an Angular dealerlocator for <a href=\"http://bmw.ca/\" class=\"metalink\">BMW</a>.",
+          "besides learning Angular and to write end to end & unit tests, I worked on large scale applications that were deployed in more than 26 Markets including right-to-left language markets as egypt.",
+          "It was a great experience, unfortunately the company lost the pitch for BMW, thus losing the majority of their revenue."
+        ],
+        "icon": "digital-employed",
+        "iconTitle": "digital worker",
+        "iconDescription": "worker with safety helmet and braces holding a laptop"
+      },
       {
         "title": "Edenspiekermann_",
         "info": "2016 • intern digital design",
@@ -546,17 +558,23 @@
       "creativity&nbsp;•••",
       "conception&nbsp;•••",
       "flexibility&nbsp;•••",
+      "ambition&nbsp;•••",
+      "thrive&nbsp;•••",
       "no coffee"
     ],
     "development": [
       "html & css&nbsp;•••",
+      "angular&nbsp;•••",
       "jquery&nbsp;•••",
       "plugins & cms&nbsp;•••",
       "accessibility&nbsp;••",
       "git, gulp&nbsp;••",
       "javascript&nbsp;••",
-      "angular&nbsp;••",
+      "react&nbsp;••",
       "nunjuck&nbsp;••",
+      "selenium&nbsp;•",
+      "karma&nbsp;•",
+      "jasmine&nbsp;•",
       "ruby & rails&nbsp;•",
       "php, python&nbsp;•",
       "node&nbsp;•"
@@ -574,6 +592,7 @@
       "ableton live&nbsp;•"
     ],
     "marketing": [
+      "Schema.org&nbsp;•••",
       "seo&nbsp;••",
       "branding&nbsp;••",
       "consulting&nbsp;•",
