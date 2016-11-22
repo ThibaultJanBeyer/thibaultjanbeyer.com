@@ -34,10 +34,8 @@
  * as long as there is not text, any siblings should be visually hidden
  * 1. only opacity is needed, the rest is to keep the other animations
  */
- .writer:empty ~ input,
- .writer:empty ~ textarea,
- .writer:empty ~ span,
- .writer:empty ~ button {
+ .writer.writer-answer--hidden .contact-input__input,
+ .writer.writer-answer--hidden .button {
    opacity: 0;
    transition: opacity 0s, background-position .1s ease-out, background-color 0.2s ease-out, color 0.2s ease-out; /* 1. */
  }
@@ -45,12 +43,10 @@
   * and should appear slowly when there is text
   * 1. only opacity is needed, the rest is to keep the other animations
   */
-  .writer ~ input,
-  .writer ~ textarea,
-  .writer ~ span,
-  .writer ~ button {
+  .writer .contact-input__input,
+  .writer .button {
     opacity: 1;
-    transition: opacity 1s 2s ease-out, background-position .1s ease-out, background-color 0.2s ease-out, color 0.2s ease-out; /* 1. */
+    transition: opacity 1s 2.5s ease-out, background-position .1s ease-out, background-color 0.2s ease-out, color 0.2s ease-out; /* 1. */
   }
 
 /*

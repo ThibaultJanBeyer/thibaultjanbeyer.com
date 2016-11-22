@@ -56,6 +56,7 @@
                   writerQuestion[1].el.innerHTML += writerQuestion[1].char[countup];
 
                   if (countdown === 0) {
+                    writerAnswerHidden[0].classList.remove('writer-answer--hidden');
                     // start the third loop
                     myLoop(
                       { countdown: writerAnswer[0].char.length - 1, duration: 65, countup: 0 },
