@@ -419,8 +419,8 @@
         "info": "2013 - 2016 • studies",
         "description": [
           "at <a href=\"http://www.designstudium.com/\" class=\"metalink\">Cologne Design Academy (KDA)</a>, Germany",
-          "expected graduation, extended diploma in communication design (3 years), with honors",
-          "final thesis: accessible web – open up websites for the physically impaired (won 3 awards)"
+          "extended diploma in communication design (3 years), with honors",
+          "final thesis: accessible web – open up websites for the physically impaired (won 2 awards + 1 special merit letter)"
         ],
         "icon": "certificate",
         "iconTitle": "certificate",
@@ -568,10 +568,10 @@
       "plugins & cms&nbsp;•••",
       "accessibility&nbsp;•••",
       "git, gulp&nbsp;•••",
+      "nunjuck, handlebars&nbsp;•••",
       "ES6, ES7&nbsp;••",
       "angular&nbsp;••",
       "react&nbsp;••",
-      "nunjuck, handlebars&nbsp;••",
       "karma, jasmine, selenium&nbsp;•",
       "ruby & rails&nbsp;•",
       "php, python&nbsp;•",
