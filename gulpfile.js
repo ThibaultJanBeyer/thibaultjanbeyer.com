@@ -21,7 +21,7 @@ gulp.task(
 gulp.task("cln", gulp.series(["clean"]));
 gulp.task(
   "devl",
-  gulp.series(["html", "sass", "javascript", "moving", "svg", "watch", "img"])
+  gulp.series(["html", "sass", "javascript", "moving", "svg", "img", "watch"])
 );
 
 // Default task

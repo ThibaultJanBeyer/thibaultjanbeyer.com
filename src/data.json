@@ -2,28 +2,64 @@
   "featuredWorks": [
     {
       "modifier": "first",
-      "title": "branding for a popband",
-      "url": "http://blog.thibaultjanbeyer.com/portfolio/the-vanilla-band/",
-      "src": "assets/img/work/TJB-TheVanilla_Identity.jpg",
-      "alt": "The vanila pop band, branding, website"
+      "title": "data center designer",
+      "url": "https://my.profitbricks.com/dashboard/dcdr2/?testDrive=true",
+      "src": "/assets/img/work/profitbricks.png",
+      "alt": "learn accessibility"
     },
     {
       "modifier": "second",
-      "title": "redesign of a tampons packaging",
-      "url": "http://blog.thibaultjanbeyer.com/portfolio/tampons-packaging/",
-      "src": "assets/img/work/tampons-redesign.jpg",
-      "alt": "Redesign of a tampons packaging"
+      "title": "learn accessibility",
+      "url": "https://learn-accessibility.org/",
+      "src": "https://assets.awwwards.com/awards/submissions/2016/07/5790812422772.jpeg",
+      "alt": "learn accessibility"
     },
     {
       "modifier": "third",
-      "title": "an ipad app for children",
-      "url": "http://blog.thibaultjanbeyer.com/portfolio/digital-publishing-the-adventures-of-packy/",
-      "src": "assets/img/work/packy-app.jpg",
-      "alt": "Packy digital publishing app for ipad"
+      "title": "single page app for BMW",
+      "url": "http://blog.thibaultjanbeyer.com/portfolio/building-an-interactive-dealerlocator-for-bmw/",
+      "src": "http://blog.thibaultjanbeyer.com/wp-content/uploads/2018/10/dealer-locator-bmw-angular-1024x563.png",
+      "alt": "single page application for BMW Digital"
     }
   ],
   "allWorks": {
-    "2016": [
+    "2016-2018": [
+      {
+        "title": "development | RIA",
+        "url": "https://my.profitbricks.com/dashboard/dcdr2/?testDrive=true",
+        "src": "/assets/img/work/profitbricks.png",
+        "alt": "Profitbricks Data Center Designer a Rich internet application"
+      },
+      {
+        "title": "development | DragSelect",
+        "url": "https://github.com/ThibaultJanBeyer/DragSelect",
+        "src": "https://raw.githubusercontent.com/ThibaultJanBeyer/DragSelect/master/dragselect.gif",
+        "alt": "Profitbricks Data Center Designer a Rich internet application"
+      },
+      {
+        "title": "development | website",
+        "url": "https://www.neomatcha.com/",
+        "src": "/assets/img/work/neomatcha.png",
+        "alt": "Profitbricks Data Center Designer a Rich internet application"
+      },
+      {
+        "title": "website teaching accessibility",
+        "url": "https://learn-accessibility.org/",
+        "src": "https://assets.awwwards.com/awards/submissions/2016/07/5790812422772.jpeg",
+        "alt": "Learn Accessibility"
+      },
+      {
+        "title": "development | BMW App",
+        "url": "http://blog.thibaultjanbeyer.com/portfolio/building-an-interactive-dealerlocator-for-bmw/",
+        "src": "http://blog.thibaultjanbeyer.com/wp-content/uploads/2018/10/dealer-locator-bmw-angular-1024x563.png",
+        "alt": "BMW Dealerlocator Web-App"
+      },
+      {
+        "title": "development | website",
+        "url": "https://blog.thibaultjanbeyer.com/portfolio/vorablesen-an-online-book-community/",
+        "src": "https://blog.thibaultjanbeyer.com/wp-content/uploads/2016/02/Screen-Shot-2016-12-25-at-11.55.39-1024x559.png",
+        "alt": "Vorablesen Web-App"
+      },
       {
         "title": "typography tutorial",
         "url": "http://blog.thibaultjanbeyer.com/portfolio/quick-guide-to-web-typography/",
@@ -93,7 +129,7 @@
         "alt": "javascript carousel slider logo on red background"
       },
       {
-        "title": "website",
+        "title": "development",
         "url": "http://blog.thibaultjanbeyer.com/portfolio/outdoor-gym-web-relaunch/",
         "src": "http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/05/1655643_975930425780447_97052519698852951_o-996x664.jpg",
         "alt": "laptop on a wooden desk with blurry background. On screen you see Outdoorgyms beautifully green website"
@@ -141,7 +177,7 @@
         "alt": "tube drawing tool to draw psychedelic circular tubes"
       },
       {
-        "title": "website",
+        "title": "development",
         "url": "http://blog.thibaultjanbeyer.com/portfolio/free-template/",
         "src": "http://blog.thibaultjanbeyer.com/wp-content/uploads/2015/04/website_template_screen1.jpg",
         "alt": "portfolio website"
