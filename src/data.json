@@ -31,7 +31,7 @@
         "alt": "Profitbricks Data Center Designer a Rich internet application"
       },
       {
-        "title": "development | DragSelect",
+        "title": "development | DragSelect tool",
         "url": "https://github.com/ThibaultJanBeyer/DragSelect",
         "src": "https://raw.githubusercontent.com/ThibaultJanBeyer/DragSelect/master/dragselect.gif",
         "alt": "Profitbricks Data Center Designer a Rich internet application"
@@ -43,7 +43,7 @@
         "alt": "Profitbricks Data Center Designer a Rich internet application"
       },
       {
-        "title": "website teaching accessibility",
+        "title": "teaching accessibility",
         "url": "https://learn-accessibility.org/",
         "src": "https://assets.awwwards.com/awards/submissions/2016/07/5790812422772.jpeg",
         "alt": "Learn Accessibility"
@@ -53,6 +53,12 @@
         "url": "http://blog.thibaultjanbeyer.com/portfolio/building-an-interactive-dealerlocator-for-bmw/",
         "src": "http://blog.thibaultjanbeyer.com/wp-content/uploads/2018/10/dealer-locator-bmw-angular-1024x563.png",
         "alt": "BMW Dealerlocator Web-App"
+      },
+      {
+        "title": "development | price calculator plugin",
+        "url": "https://www.profitbricks.de/en/product/cloud-price-calculator/",
+        "src": "/assets/img/work/pb-price-calculator.png",
+        "alt": "Vorablesen Web-App"
       },
       {
         "title": "development | website",
