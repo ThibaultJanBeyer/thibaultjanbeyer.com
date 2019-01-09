@@ -1,5 +1,6 @@
 # thibaultjanbeyer.com v10
 Source files for my personal site at thibaultjanbeyer.com (Version 10)  
+Made in 2016 when I was 25.  
 Feel free to look around.  
 
 The /src/ folder is probably what you are looking for since it is the uncompressed version. Hence src = source.   
