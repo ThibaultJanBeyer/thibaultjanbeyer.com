@@ -12,4 +12,4 @@ My local folder structure looks like this:
 > src –– the working folder  
 data.json is my “backend”  
 
-*Note: you can find all versions of my website (starting at version 1 made in 2002) via http://blog.thibaultjanbeyer.com/portfolio/older-versions-of-my-website/*
+*Note: you can find all versions of my website (starting at version 1 made in 2002) via http://blog.thibaultjanbeyer.com/old-versions-website-archive/*
